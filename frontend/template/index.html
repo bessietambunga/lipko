@@ -1,0 +1,37 @@
+@@include('./components/_meta.html', {
+    "title": "Index",
+    "bodyclass": ""
+})
+
+@@include('./components/_svgstore.html')
+@@include('./popup/_popup.html')
+
+<div class="wrapper" id="wrapper-main">
+    
+    @@include('./components/_upper.html')
+
+    @@include('./components/_header.html', {
+        "current": "about-us"
+    })
+    
+    <div class="container">
+        <div class="layout">
+            <div class="content">
+            
+                <div class="content_header">
+                    <h1>О компании</h1>
+                </div>
+                
+                @@include('./components/_breadcrumbs.html', {
+                    "page1": "Главная",
+                    "page2": "Цвета",
+                    "page3": "Зеленый"
+                })
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('./components/_footer.html')
+@@include('./components/_scripts.html')

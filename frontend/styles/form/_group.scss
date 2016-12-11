@@ -1,0 +1,11 @@
+.f-group {
+    clear: both;
+
+    &__button {
+        float: left;
+    }
+
+    &__link {
+        float: right;
+    }
+}

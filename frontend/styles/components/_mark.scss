@@ -1,0 +1,50 @@
+.mark {
+    clear: both;
+}
+
+.mark ul {
+    clear: both;
+    margin: 0;
+}
+
+.mark ul:last-child {
+    margin-bottom: 0;
+}
+
+.mark li {
+    display: inline-block;
+    margin-bottom: 2px;
+    margin-right: 2px;
+}
+
+.mark li a {
+    color: #595959;
+    font-size: 16px;
+    line-height: 25px;
+    min-height: 25px;
+    padding: 0 7px;
+    border-radius: 4px;
+    font-weight: 700;
+    text-shadow: 0 1px 0 #EDEDED;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.mark li a .dashed {
+    border-bottom: 1px dashed #b9b9b9;
+}
+
+.mark li a:hover {
+    background-color: #e4e4e4;
+}
+
+.mark li.active a {
+    color: #FFF;
+    background-color: #f00;
+    text-shadow: none;
+}
+
+.mark li a:hover .dashed,
+.mark li.active a .dashed {
+    border: 0;
+}

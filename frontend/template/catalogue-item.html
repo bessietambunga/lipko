@@ -1,0 +1,101 @@
+@@include('./components/_meta.html', {
+    "title": "Index",
+    "bodyclass": ""
+})
+
+@@include('./components/_svgstore.html')
+@@include('./popup/_popup.html')
+
+<div class="wrapper" id="wrapper-main">
+    
+    @@include('./components/_upper.html')
+
+    @@include('./components/_header.html', {
+        "current": "about-us"
+    })
+
+    <div class="container">
+        <div class="layout">
+            <div class="content">
+                <div class="content_header">
+                    <h1>Каталог</h1>
+                </div>
+            </div>
+        </div>
+        
+        <div class="list-item">
+            <div class="list-item-layout clearfix">
+                <div class="catalog-item-aside">
+                    <div class="catalog-item-image">
+                        <img src="../images/catalog/item.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="list-item-content">
+                    <div class="inner">
+                        <div class="list-item-name">
+                            <strong class="list-item-link">Карп (красный) клубника</strong><br>
+                            <span class="list-item-article">арт. ССС-001</span>
+                        </div>
+                                            
+                        <div class="list-item-parameters">
+                            <table>
+                                <tr>
+                                    <td><img src="../images/ico/1.png" alt=""></td>
+                                    <td><strong>Серия:</strong></td>
+                                    <td>Классик</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../images/ico/2.png" alt=""></td>
+                                    <td><strong>Тип:</strong></td>
+                                    <td>Карп</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../images/ico/3.png" alt=""></td>
+                                    <td><strong>Аромат:</strong></td>
+                                    <td>Клубника</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../images/ico/4.png" alt=""></td>
+                                    <td><strong>Цвет:</strong></td>
+                                    <td><img src="../images/ico/yellow.png" alt=""> <img src="../images/ico/red.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../images/ico/5.png" alt=""></td>
+                                    <td><strong>Масса:</strong></td>
+                                    <td>800 гр.</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="list-item-price">Цена: <strong>800</strong></div>
+
+                        <div class="list-item-count clearfix">
+                            <a href="#item-1" onclick="return false" class="pane inc increase-cart-trigger"></a>
+                            <a href="#item-1" onclick="return false" class="pane dec decrease-cart-trigger"></a>
+                            <input name="count[1]" id="count-1" class="integer" value="1">
+                        </div>
+                        
+                        <a class="button add-cart-trigger" title="Добавить в корзину" href="#item-1">в корзину</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="list-item-layout clearfix">
+            <div class="list-item-description clearfix">
+                <div class="column-left-150">
+                    <img src="../images/catalog/fisher.jpg" alt="">
+                </div>
+                <div class="column-push-150">
+                    <p>Одна из любимых наших прикормок! Имеет в своей основе тесто приготовленное по особой рецептуре и запеченное в нежнейший бисквит. Содержит растительные и животные протеины. Средней фракции, с семью различными самыми вкусными запахами, измельченные семена льна, сои и ряда других растительных компонентов не смогут оставить равнодушным даже самую сытую рыбу. А слегка обжаренные, перемолотые и так любимые карпом семена конопли, не дадут ему отойти от места кормления. Вся палитра ароматики и цвета проявит себя при увлажнении, но хотим напомнить, лучше прикормку недоувлажнить чем переувлажнить.</p>
+                    <p>Видео работы прикормочного шара под водой: <a href="">смотрим</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+@@include('./components/_footer.html')
+@@include('./components/_scripts.html')

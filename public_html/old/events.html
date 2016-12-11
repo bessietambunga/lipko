@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!-- (c) lnk. celebro | http://www.celebro.ru/ -->
+<html lang="ru-RU" dir="ltr" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../css/main.css">
+
+	<script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+	
+	<link rel="apple-touch-icon" sizes="144x144" href="../apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+	
+	<link rel="icon" type="image/png" href="../favicon.png">
+    
+    <!--[if IE]>
+	<link rel="shortcut icon" href="../favicon.ico">
+	<meta http-equiv="imagetoolbar" content="no">
+	<script src="https://developer.cdn.mozilla.net/media/js/libs/html5.js"></script>
+	<![endif]-->
+
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="../css/ie.css">
+	<script type="text/javascript" src="../js/PIE.js"></script>
+	<![endif]-->
+
+    <meta name="robots" content="index, follow">
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	
+	<meta name="language" content="ru">
+	<meta name="cms" content="celebro.cms">
+	<meta name="author" content="http://celebro.ru/">
+	<meta name="viewport" content="width=1000, user-scalable=yes">
+	
+	<title></title>
+</head>
+<body>
+
+
+<div class="popup" id="popup-feedback">
+	<a href="#" class="popup-close popup-btn-close"></a>
+	<div class="popup-header">
+		Обратная связь:
+	</div>
+	<div class="popup-content clearfix">
+		<form action="../ololo.json" method="POST" class="form form-ajax error-summary">
+			<div class="form-fields">
+				<div class="label">
+					<input name="name" placeholder="Имя:" data-error="Необходимо заполнить поле «Имя»">
+				</div>
+
+				<div class="label">
+					<input name="email" placeholder="E-mail:" data-error="Необходимо заполнить поле «E-mail»">
+				</div>
+
+				<div class="label">
+					<input name="phone" placeholder="Телефон:" data-error="Необходимо заполнить поле «Телефон»">
+				</div>
+			</div>
+
+			<div class="label">
+				<textarea name="message" placeholder="Сообщение:" data-error="Необходимо заполнить поле «Сообщение»"></textarea>
+			</div>
+			
+			<div class="label captcha clearfix">
+				<div class="captcha-field">
+					<input name="captcha" data-error="Необходимо заполнить поле «Проверка»">
+				</div>
+				<div class="captcha-image">
+					<img src="../images/captcha.png" height="46" width="137" alt="">
+				</div>
+			</div>
+
+			<div class="form-errors" id="form-errors"></div>
+		
+			<div class="center">
+				<button type="submit" class="button">ОТПРАВИТЬ</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="wrapper" id="wrapper-main">
+	<div class="wrapper-main">
+		<div class="upper">
+			<div class="upper_logo"></div>
+			<div class="nav">
+				<ul class="nav-list">
+					<li class="nav-list-item"><a href="about_us.html" class="nav-list-item-link">О КОМПАНИИ</a></li>
+					<li class="nav-list-item"><a href="catalogue.html" class="nav-list-item-link">КАТАЛОГ</a></li>
+					<li class="nav-list-item"><a href="events.html" class="nav-list-item-link">СОБЫТИЯ</a></li>
+					<li class="nav-list-item"><a href="gallery.html" class="nav-list-item-link">ГАЛЕРЕЯ</a></li>
+					<li class="nav-list-item"><a href="cooperation.html" class="nav-list-item-link">СОТРУДНИЧЕСТВО</a></li>
+					<li class="nav-list-item"><a href="buy.html" class="nav-list-item-link">ГДЕ КУПИТЬ</a></li>
+					<li class="nav-list-item"><a href="contact.html" class="nav-list-item-link">КОНТАКТЫ</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="header">
+		<div class="layout">
+			<a href="" class="header-logo"></a>
+
+			<div class="header-auth">
+				<a href="">Вход</a> / <a href="">Регистрация</a>
+			</div>
+			
+			<div class="nav">
+				<ul class="nav-list">
+					<li class="nav-list-item"><a href="about_us.html" class="nav-list-item-link">О КОМПАНИИ</a></li>
+					<li class="nav-list-item"><a href="catalogue.html" class="nav-list-item-link">КАТАЛОГ</a></li>
+					<li class="nav-list-item"><a href="events.html" class="nav-list-item-link">СОБЫТИЯ</a></li>
+					<li class="nav-list-item"><a href="gallery.html" class="nav-list-item-link">ГАЛЕРЕЯ</a></li>
+					<li class="nav-list-item"><a href="cooperation.html" class="nav-list-item-link">СОТРУДНИЧЕСТВО</a></li>
+					<li class="nav-list-item"><a href="buy.html" class="nav-list-item-link">ГДЕ КУПИТЬ</a></li>
+					<li class="nav-list-item"><a href="contact.html" class="nav-list-item-link">КОНТАКТЫ</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="layout">
+			<div class="content">
+				<div class="content_header">
+					<h1>События</h1>
+					
+					<h2>Метки:</h2>
+					
+					<div class="tags">
+						 <a href="">Зимняя ловля;</a> <a href="">Карп;</a> <a href="">«Classic»;</a> <a href="">Лето;</a> <a href="">Осень;</a> <a href="">Не клюёт;</a> <a href="">«Gold»;</a> <a href="">Зима;</a> <a href="">Лещь;</a> <a href="">Подлёдный лов;</a> <a href="">Плотва;</a> <a href="">Карась;</a> <a href="">Сазан;</a> <a href="">Толстолобик;</a> <a href="">Весна;</a> <a href="">Непогода;</a> <a href="">Видео;</a> <a href="">Фото;</a> <a href="">Амур;</a> <a href="">Фидер;</a> <a href="">Зимняя ловля;</a> <a href="">Карп;</a> <a href="">«Classic»;</a> <a href="">Лето;</a> <a href="">Осень;</a> <a href="">Не клюёт;</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="items">
+			<div class="list-item">
+				<div class="list-item-layout clearfix">
+					<div class="list-item-aside">
+						<div class="list-item-image border">
+							<img src="../images/events/1.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="list-item-content">
+						<div class="inner">
+							<div class="list-item-date">20 ноября <span class="year">2014</span></div>
+							<div class="list-item-name">
+								<a href="" class="list-item-link">Ловля карпа на прикормку «Classic»</a>
+							</div>
+							<div class="list-item-description">
+								Прикормка «на все случаи жизни». Прекрасно подходит для любого способа ловли на любую белую рыбу. Фракция средняя, выпускается в пяти цветах и имеет девять различных ароматов, что дает прекрасную возможность для самостоятельных экспериментов с цветами и запахами. Максимально повышает эффективность прикормки добавление рубленного мотыля и опарыша. Рекомендуем доувлажнить смесь сиропами если собираетесь ловить на поплавочную снасть или при ловле на метод.
+							</div>
+							
+							<div class="list-item-tags">
+								<strong>Метки:</strong> <a href="">Зимняя ловля;</a> <a href="">Карп;</a> <a href="">«Classic»;</a> <a href="">Лето</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="list-item">
+				<div class="list-item-layout clearfix">
+					<div class="list-item-aside">
+						<div class="list-item-image border">
+							<img src="../images/gallery/2.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="list-item-content">
+						<div class="inner">
+							<div class="list-item-date">14 ноября <span class="year">2014</span></div>
+							<div class="list-item-name">
+								<a href="" class="list-item-link">Соревнования по ловле сазана на реке Белой за кубок “Золотого сазана”</a>
+							</div>
+							
+							<div class="list-item-tags">
+								<strong>Метки:</strong> <a href="">Соревнования;</a> <a href="">Сазан;</a> <a href="">Река</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="list-item">
+				<div class="list-item-layout clearfix">
+					<div class="list-item-aside">
+						<div class="list-item-image border">
+							<img src="../images/gallery/3.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="list-item-content">
+						<div class="inner">
+							<div class="list-item-date">27 сентября <span class="year">2014</span></div>
+							<div class="list-item-name">
+								<a href="" class="list-item-link">Фидер и его особенности примененияна быстрых речках</a>
+							</div>
+
+							<div class="list-item-tags">
+								<strong>Метки:</strong> <a href="">Фидер;</a> <a href="">Река</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="list-item">
+				<div class="list-item-layout clearfix">
+					<div class="list-item-aside">
+						<div class="list-item-image border">
+							<img src="../images/gallery/4.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="list-item-content">
+						<div class="inner">
+							<div class="list-item-date">20 ноября <span class="year">2014</span></div>
+							<div class="list-item-name">
+								<a href="" class="list-item-link">Ловля карпа на прикормку «Classic»</a>
+							</div>
+
+							<div class="list-item-description">
+								Прикормка «на все случаи жизни». Прекрасно подходит для любого способа ловли на любую белую рыбу. Фракция средняя, выпускается в пяти цветах и имеет девять различных ароматов, что дает прекрасную возможность для самостоятельных экспериментов с цветами и запахами. Максимально повышает эффективность прикормки добавление рубленного 
+							</div>
+
+							<div class="list-item-tags">
+								<strong>Метки:</strong> <a href="">Зимняя ловля;</a> <a href="">Карп;</a> <a href="">«Classic»;</a> <a href="">Лето</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="pagination">
+			<ul>
+				<li><a href="" class="pagination-icon first"><span></span></a></li>
+				<li><a href="" class="pagination-icon prev"><span></span></a></li>
+				<li class="active"><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">5</a></li>
+				<li><a href="">6</a></li>
+				<li><a href="">7</a></li>
+				<li><a href="" class="pagination-icon next"><span></span></a></li>
+				<li><a href="" class="pagination-icon last"><span></span></a></li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+
+<div class="footer">
+	
+	<a href="#popup-feedback" id="submarine" class="footer-submarine footer-submarine-reverse open-popup">
+		<span class="footer-submarine-inner">
+			<span class="footer-submarine-bg"></span>
+			<span class="footer-submarine-text">ОБРАТНАЯ СВЯЗЬ</span>
+		</span>
+	</a>
+
+	<div class="footer-background">
+		<div class="layout">
+			<div class="footer-copyright"><span class="footer-copyright_in">© 2014 CARPOLUX<br>все права защищены</span></div>
+			
+			<div class="footer-contacts">
+				<div class="footer-contacts_city">г. Краснодар</div>
+				<div class="footer-contacts_phone">+7 (918) <strong>910-45-45</strong></div>
+			</div>
+
+			<div class="footer-studio">Создание сайта <a href="http://rus-technologia.ru/" target="_blank">Русь-Технология</a></div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/cookie.js"></script>
+<script type="text/javascript" src="../js/popup.js"></script>
+<script type="text/javascript" src="../js/app.js"></script>
+
+</body>
+</html>

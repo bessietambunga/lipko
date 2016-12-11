@@ -1,0 +1,42 @@
+.selectable,
+.selectbox,
+.selectbox .select { width: 100%; height: 40px; }
+
+.selectable,
+.selectbox .select { position: relative; z-index: 100; padding: 0 14px; line-height: 35px; }
+
+.selectable,
+.selectbox .select,
+.selectbox .dropdown { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 3px solid #eaeae9; background-color: #eaeae9; -webkit-transition: border-color .2s; -moz-transition: border-color .2s; -ms-transition: border-color .2s; -o-transition: border-color .2s; transition: border-color .2s; -ms-box-sizing: border-box; }
+
+.selectbox-active,
+.selectbox-active .select,
+.selectbox-active .dropdown { border-color: #70abcb; background-color: #fff; }
+
+.selectbox-active .select:after,
+.selectbox-active .select:before { position: absolute; bottom: -3px; z-index: 100; width: 3px; height: 3px; background: #70abcb; content: ""; }
+.selectbox-active .select:after { left: -3px; }
+.selectbox-active .select:before { right: -3px; }
+
+.selectbox-active .select { border-bottom-color: #fff; }
+.selectbox .select,
+.selectbox .dropdown,
+.selectbox li { font-weight: normal; font-size: 15px; font-family: Arial, sans-serif; }
+
+.selectbox li { line-height: 15px; }
+
+.selectbox { position: relative; z-index: 10; margin: 0; padding: 0; vertical-align: middle; cursor: pointer; }
+.selectbox .select .text { display: block; overflow: hidden; padding: 0; width: 100%; height: 100%; text-overflow: ellipsis; white-space: nowrap; }
+.selectbox .trigger, .selectbox .trigger .arrow { position: absolute; width: 37px; height: 37px; }
+.selectbox .trigger { top: 0px; right: 0px; }
+.selectbox .trigger .arrow { top: 0; left: 0; display: block; margin: 0; background: url(/images/select-passive.png) no-repeat center center; }
+.selectbox-active .trigger .arrow { background-image: url(/images/select.png); }
+.selectbox .dropdown { position: absolute; top: 37px; left: 0; z-index: 1001; margin: 0; padding: 7px 0; width: 100%; color: #cb161a; }
+.selectbox ul { list-style-type: none; }
+.selectbox li { margin: 0; padding: 8px 14px; border: none; background-image: none; }
+.selectbox li.last-child { border-bottom: 0; }
+.selectbox li.selected { background: #fff; }
+.selectbox li.sel { display: none; }
+.selectbox li:hover { background: #6fadc9; color: #fff; }
+.selectbox li.disabled { color: #aaaaaa; }
+.selectbox li.disabled:hover { background: none; }

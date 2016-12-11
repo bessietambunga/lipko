@@ -1,0 +1,3 @@
+.inner { display: table; width: 100%; }
+.inner:after { display: block; clear: both; width: 100%; content:' '; }
+* html .inner { margin-left: -3px; }

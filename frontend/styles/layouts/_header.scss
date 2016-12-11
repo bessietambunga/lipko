@@ -1,0 +1,71 @@
+.header {
+    width: 100%;
+    position: relative;
+    height: 119px;
+    background-color: #000;
+}
+
+.header-logo {
+    width: 245px;
+    height: 56px;
+    background: url(/images/header-logo.png) 0 0 no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 31px;
+}
+
+.header .nav {
+    width: auto;
+    position: absolute;
+    right: 0;
+    top: 47px;
+}
+
+.header .nav-list {
+    text-align: left;
+}
+
+.header-auth {
+    color: #656565;
+    font-size: 10px;
+    font-weight: 400;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.header-auth a {
+    color: #656565;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.header-cart {
+    width: 84px;
+    height: 63px;
+    padding-right: 4px;
+    position: absolute;
+    top: 87px;
+    right: 5px;
+    z-index: 100;
+    display: block;
+    background: url(/images/cart.png) 0 0 no-repeat;
+    color: #000;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    line-height: 69px;
+}
+
+
+@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1140px) {}
+@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 960px) {}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 568px) {}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}

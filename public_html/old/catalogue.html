@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<!-- (c) lnk. celebro | http://www.celebro.ru/ -->
+<html lang="ru-RU" dir="ltr" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../css/main.css">
+
+	<script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+	
+	<link rel="apple-touch-icon" sizes="144x144" href="../apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+	
+	<link rel="icon" type="image/png" href="../favicon.png">
+    
+    <!--[if IE]>
+	<link rel="shortcut icon" href="../favicon.ico">
+	<meta http-equiv="imagetoolbar" content="no">
+	<script src="https://developer.cdn.mozilla.net/media/js/libs/html5.js"></script>
+	<![endif]-->
+
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="../css/ie.css">
+	<script type="text/javascript" src="../js/PIE.js"></script>
+	<![endif]-->
+
+    <meta name="robots" content="index, follow">
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	
+	<meta name="language" content="ru">
+	<meta name="cms" content="celebro.cms">
+	<meta name="author" content="http://celebro.ru/">
+	<meta name="viewport" content="width=1000, user-scalable=yes">
+	
+	<title></title>
+</head>
+<body>
+
+
+<div class="popup" id="popup-feedback">
+	<a href="#" class="popup-close popup-btn-close"></a>
+	<div class="popup-header">
+		Обратная связь:
+	</div>
+	<div class="popup-content clearfix">
+		<form action="../ololo.json" method="POST" class="form form-ajax error-summary">
+			<div class="form-fields">
+				<div class="label">
+					<input name="name" placeholder="Имя:" data-error="Необходимо заполнить поле «Имя»">
+				</div>
+
+				<div class="label">
+					<input name="email" placeholder="E-mail:" data-error="Необходимо заполнить поле «E-mail»">
+				</div>
+
+				<div class="label">
+					<input name="phone" placeholder="Телефон:" data-error="Необходимо заполнить поле «Телефон»">
+				</div>
+			</div>
+
+			<div class="label">
+				<textarea name="message" placeholder="Сообщение:" data-error="Необходимо заполнить поле «Сообщение»"></textarea>
+			</div>
+			
+			<div class="label captcha clearfix">
+				<div class="captcha-field">
+					<input name="captcha" data-error="Необходимо заполнить поле «Проверка»">
+				</div>
+				<div class="captcha-image">
+					<img src="../images/captcha.png" height="46" width="137" alt="">
+				</div>
+			</div>
+
+			<div class="form-errors" id="form-errors"></div>
+		
+			<div class="center">
+				<button type="submit" class="button">ОТПРАВИТЬ</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="wrapper wrapper-main-open" id="wrapper-main">
+	<div class="wrapper-main">
+		<div class="upper">
+			<div class="upper_logo"></div>
+			<div class="nav">
+				<ul class="nav-list">
+					<li class="nav-list-item"><a href="about_us.html" class="nav-list-item-link">О КОМПАНИИ</a></li>
+					<li class="nav-list-item"><a href="catalogue.html" class="nav-list-item-link">КАТАЛОГ</a></li>
+					<li class="nav-list-item"><a href="events.html" class="nav-list-item-link">СОБЫТИЯ</a></li>
+					<li class="nav-list-item"><a href="gallery.html" class="nav-list-item-link">ГАЛЕРЕЯ</a></li>
+					<li class="nav-list-item"><a href="cooperation.html" class="nav-list-item-link">СОТРУДНИЧЕСТВО</a></li>
+					<li class="nav-list-item"><a href="buy.html" class="nav-list-item-link">ГДЕ КУПИТЬ</a></li>
+					<li class="nav-list-item"><a href="contact.html" class="nav-list-item-link">КОНТАКТЫ</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="header">
+		<div class="layout">
+			<a href="" class="header-logo"></a>
+
+			<div class="header-auth">
+				<a href="">Вход</a> / <a href="">Регистрация</a>
+			</div>
+			
+			<a href="" class="header-cart" id="cart-count">2</a>
+
+			<div class="nav">
+				<ul class="nav-list">
+					<li class="nav-list-item"><a href="about_us.html" class="nav-list-item-link">О КОМПАНИИ</a></li>
+					<li class="nav-list-item"><a href="catalogue.html" class="nav-list-item-link">КАТАЛОГ</a></li>
+					<li class="nav-list-item"><a href="events.html" class="nav-list-item-link">СОБЫТИЯ</a></li>
+					<li class="nav-list-item"><a href="gallery.html" class="nav-list-item-link">ГАЛЕРЕЯ</a></li>
+					<li class="nav-list-item"><a href="cooperation.html" class="nav-list-item-link">СОТРУДНИЧЕСТВО</a></li>
+					<li class="nav-list-item"><a href="buy.html" class="nav-list-item-link">ГДЕ КУПИТЬ</a></li>
+					<li class="nav-list-item"><a href="contact.html" class="nav-list-item-link">КОНТАКТЫ</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="layout layout-960">
+			<div class="content">
+				<div class="content_header">
+					<h1>Каталог</h1>
+				</div>
+				
+				<div class="mark-wrap">
+					<div class="mark-wrap-group">
+						<div class="mark-wrap-group-name">Серия:</div>
+						<div class="mark-wrap-group-content"><div class="inner">
+							<div class="mark">
+								<ul>
+									<li class="active"><a href=""><span class="dashed">Classik</span></a></li>
+									<li><a href=""><span class="dashed">Standart</span></a></li>
+									<li><a href=""><span class="dashed">Gold</span></a></li>
+									<li><a href=""><span class="dashed">Все</span></a></li>
+								</ul>
+							</div>
+						</div></div>
+					</div>
+
+					<div class="mark-wrap-group">
+						<div class="mark-wrap-group-name">Тип:</div>
+						<div class="mark-wrap-group-content"><div class="inner">
+							<div class="mark">
+								<ul>
+									<li><a href=""><span class="dashed">Карп</span></a></li>
+									<li><a href=""><span class="dashed">Амур</span></a></li>
+									<li><a href=""><span class="dashed">Толстолобик</span></a></li>
+									<li><a href=""><span class="dashed">Карась</span></a></li>
+									<li><a href=""><span class="dashed">Метод-мик</span>с</a></li>
+									<li><a href=""><span class="dashed">Фидер-микс</span></a></li>
+									<li><a href=""><span class="dashed">Лещ-плотва</span></a></li>
+									<li><a href=""><span class="dashed">Универсальная</span></a></li>
+									<li><a href=""><span class="dashed">База</span></a></li>
+									<li class="active"><a href=""><span class="dashed">Все</a></li>
+								</ul>
+							</div>
+						</div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="items">
+			<div class="catalog-item list-item">
+				<div class="list-item-layout clearfix">
+					<div class="list-item-aside">
+						<div class="list-item-image">
+							<img src="../images/catalog/1.jpg" alt="">
+						</div>
+						<div class="list-item-price">Цена: <strong>800</strong></div>
+					</div>
+
+					<div class="list-item-content">
+						<div class="inner">
+							<div class="list-item-name">
+								<a href="catalogue-item.html" class="list-item-link">Карп (красный) клубника</a>
+								<span class="list-item-article">арт. ССС-001</span>
+							</div>
+							<div class="list-item-description">
+								Одна из любимых наших прикормок! Имеет в своей основе тесто приготовленное по особой рецептуре и запеченное в нежнейший бисквит. Содержит растительные и животные протеины. Средней фракции, с семью различными самыми вкусными запахами,
+							</div>
+							
+							<div class="list-item-parameters">
+								<table>
+									<tr>
+										<td><img src="../images/ico/1.png" alt=""></td>
+										<td><strong>Серия:</strong></td>
+										<td>Классик</td>
+									</tr>
+									<tr>
+										<td><img src="../images/ico/2.png" alt=""></td>
+										<td><strong>Тип:</strong></td>
+										<td>Карп</td>
+									</tr>
+									<tr>
+										<td><img src="../images/ico/3.png" alt=""></td>
+										<td><strong>Аромат:</strong></td>
+										<td>Клубника</td>
+									</tr>
+									<tr>
+										<td><img src="../images/ico/4.png" alt=""></td>
+										<td><strong>Цвет:</strong></td>
+										<td><img src="../images/ico/red.png" alt=""></td>
+									</tr>
+									<tr>
+										<td><img src="../images/ico/5.png" alt=""></td>
+										<td><strong>Масса:</strong></td>
+										<td>800 гр.</td>
+									</tr>
+								</table>
+							</div>
+
+							<div class="list-item-count clearfix">
+								<a href="#item-1" onclick="return false" class="pane inc increase-cart-trigger"></a>
+								<a href="#item-1" onclick="return false" class="pane dec decrease-cart-trigger"></a>
+								<input name="count[1]" id="count-1" class="integer" value="1">
+							</div>
+							
+							<a class="button add-cart-trigger" title="Добавить в корзину" href="#item-1">в корзину</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="catalog-item list-item">
+				<div class="list-item-layout clearfix">
+					<div class="list-item-aside">
+						<div class="list-item-image">
+							<img src="../images/catalog/1.jpg" alt="">
+						</div>
+						<div class="list-item-price">Цена: <strong>800</strong></div>
+					</div>
+
+					<div class="list-item-content">
+						<div class="inner">
+							<div class="list-item-name">
+								<a href="catalogue-item.html" class="list-item-link">Карп (жёлтый) кукуруза</a>
+								<span class="list-item-article">арт. ССС-004</span>
+							</div>
+							<div class="list-item-description">
+								Одна из любимых наших прикормок! Имеет в своей основе тесто приготовленное по особой рецептуре и запеченное в нежнейший бисквит. Содержит растительные и животные протеины. Средней фракции, с семью различными самыми вкусными запахами,
+							</div>
+							
+							<div class="list-item-parameters">
+								<table>
+									<tr>
+										<td><img src="../images/ico/1.png" alt=""></td>
+										<td><strong>Серия:</strong></td>
+										<td>Классик</td>
+									</tr>
+									<tr>
+										<td><img src="../images/ico/2.png" alt=""></td>
+										<td><strong>Тип:</strong></td>
+										<td>Карп</td>
+									</tr>
+									<tr>
+										<td><img src="../images/ico/3.png" alt=""></td>
+										<td><strong>Аромат:</strong></td>
+										<td>Клубника</td>
+									</tr>
+									<tr>
+										<td><img src="../images/ico/4.png" alt=""></td>
+										<td><strong>Цвет:</strong></td>
+										<td><img src="../images/ico/yellow.png" alt=""> <img src="../images/ico/red.png" alt=""></td>
+									</tr>
+									<tr>
+										<td><img src="../images/ico/5.png" alt=""></td>
+										<td><strong>Масса:</strong></td>
+										<td>800 гр.</td>
+									</tr>
+								</table>
+							</div>
+
+							<div class="list-item-count clearfix">
+								<a href="#item-2" onclick="return false" class="pane inc increase-cart-trigger"></a>
+								<a href="#item-2" onclick="return false" class="pane dec decrease-cart-trigger"></a>
+								<input name="count[2]" id="count-2" class="integer" value="1">
+							</div>
+							
+							<a class="button add-cart-trigger" title="Добавить в корзину" href="#item-2">в корзину</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="catalog-item list-item">
+				<div class="list-item-layout clearfix">
+					<div class="list-item-aside">
+						<div class="list-item-image">
+							<img src="../images/catalog/1.jpg" alt="">
+						</div>
+						<div class="list-item-price">Цена: <strong>800</strong></div>
+					</div>
+
+					<div class="list-item-content">
+						<div class="inner">
+							<div class="list-item-name">
+								<a href="catalogue-item.html" class="list-item-link">Амур (зелёный) анис длинное предложение в две строки</a>
+								<span class="list-item-article">арт. ССА-005</span>
+							</div>
+							<div class="list-item-description">
+								Одна из любимых наших прикормок! Имеет в своей основе тесто приготовленное по особой рецептуре и запеченное в нежнейший бисквит. Содержит растительные и животные протеины. Средней фракции, с семью различными самыми вкусными запахами,
+							</div>
+							
+							<div class="list-item-parameters">
+								<table>
+									<tr>
+										<td><img src="../images/ico/1.png" alt=""></td>
+										<td><strong>Серия:</strong></td>
+										<td>Классик</td>
+									</tr>
+									<tr>
+										<td><img src="../images/ico/2.png" alt=""></td>
+										<td><strong>Тип:</strong></td>
+										<td>Карп</td>
+									</tr>
+									<tr>
+										<td><img src="../images/ico/3.png" alt=""></td>
+										<td><strong>Аромат:</strong></td>
+										<td>Клубника</td>
+									</tr>
+									<tr>
+										<td><img src="../images/ico/4.png" alt=""></td>
+										<td><strong>Цвет:</strong></td>
+										<td><img src="../images/ico/green.png" alt=""></td>
+									</tr>
+									<tr>
+										<td><img src="../images/ico/5.png" alt=""></td>
+										<td><strong>Масса:</strong></td>
+										<td>800 гр.</td>
+									</tr>
+								</table>
+							</div>
+
+							<div class="list-item-count clearfix">
+								<a href="#item-3" onclick="return false" class="pane inc increase-cart-trigger"></a>
+								<a href="#item-3" onclick="return false" class="pane dec decrease-cart-trigger"></a>
+								<input name="count[3]" id="count-3" class="integer" value="1">
+							</div>
+							
+							<a class="button add-cart-trigger" title="Добавить в корзину" href="#item-3">в корзину</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="pagination">
+			<ul>
+				<li><a href="" class="pagination-icon first"><span></span></a></li>
+				<li><a href="" class="pagination-icon prev"><span></span></a></li>
+				<li class="active"><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">5</a></li>
+				<li><a href="">6</a></li>
+				<li><a href="">7</a></li>
+				<li><a href="" class="pagination-icon next"><span></span></a></li>
+				<li><a href="" class="pagination-icon last"><span></span></a></li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+
+<div class="footer">
+	<a href="#popup-feedback" id="submarine" class="footer-submarine footer-submarine-reverse open-popup">
+		<span class="footer-submarine-inner">
+			<span class="footer-submarine-bg"></span>
+			<span class="footer-submarine-text">ОБРАТНАЯ СВЯЗЬ</span>
+		</span>
+	</a>
+
+	<div class="footer-background">
+		<div class="layout">
+			<div class="footer-copyright"><span class="footer-copyright_in">© 2014 CARPOLUX<br>все права защищены</span></div>
+			
+			<div class="footer-contacts">
+				<div class="footer-contacts_city">г. Краснодар</div>
+				<div class="footer-contacts_phone">+7 (918) <strong>910-45-45</strong></div>
+			</div>
+
+			<div class="footer-studio">Создание сайта <a href="http://rus-technologia.ru/" target="_blank">Русь-Технология</a></div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/cookie.js"></script>
+<script type="text/javascript" src="../js/popup.js"></script>
+<script type="text/javascript" src="../js/cart.js"></script>
+<script type="text/javascript" src="../js/app.js"></script>
+
+</body>
+</html>

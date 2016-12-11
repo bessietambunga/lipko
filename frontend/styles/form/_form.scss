@@ -1,0 +1,82 @@
+.form input, .form textarea {
+    width: 100%;
+    padding: 0 9px;
+    font: 400 13px/13px Arial, sans-serif;
+    position: relative;
+    outline: none;
+    border: 1px solid #BFA05B;
+    background-color: #FFF;
+    color: #000;
+    -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.2);
+    -webkit-transition: border-color .2s, background-color .2s;
+    -moz-transition: border-color .2s, background-color .2s;
+    -ms-transition: border-color .2s, background-color .2s;
+    -o-transition: border-color .2s, background-color .2s;
+    transition: border-color .2s, background-color .2s;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form input {
+    height: 27px;
+    line-height: 27px;
+}
+
+.form textarea {
+    padding: 8px 9px;
+    min-height: 106px;
+    resize: none;
+}
+
+.form textarea:focus, .form input:focus {
+    border-color: #70abcb;
+    background-color: #fff;
+}
+
+.form input.success, .form textarea.success {
+    border-color: #63b257;
+    color: #63b257;
+}
+
+.form input.error, .form textarea.error {
+    border-color: #ff0000;
+    color: #ff0000;
+    outline: 2px solid #ff5c5c;
+    -moz-outline-radius: 2px;
+    -webkit-outline-radius: 2px;
+}
+
+.form input.secret, .form textarea.secret {
+    font-size: 25px;
+}
+
+.form-errors {
+    width: 260px;
+    margin: 0 auto 15px;
+    padding: 0 12px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAGBAMAAAD9IJlFAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAKlBMVEUAAAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAAAAAA7GCjLAAAADHRSTlMAZiJVmcwzqndE3YjhGDZhAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAACZJREFUCNdjYJBRYGAwkTFNYKg5c6aBgXNNEAMDx4ljDAysDdUMAGMGB1MbAjFaAAAAAElFTkSuQmCC') no-repeat 0 0;
+}
+
+.form-errors span {
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-fields {
+    width: 202px;
+}
+
+.form .label {
+    clear: both;
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 0;
+}

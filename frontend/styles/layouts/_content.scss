@@ -1,0 +1,116 @@
+.content {
+    margin-left: 300px;
+}
+
+.content_header {
+    margin-bottom: 10px;
+}
+
+.content_header h1 {
+    margin-bottom: 0;
+}
+
+.content_header h2 {
+    margin-top: 20px;
+}
+
+.layout-960 .content_header h1 {
+    padding-left: 25px;
+}
+
+.contact {
+    padding-bottom: 18px;
+    margin-bottom: 30px;
+    margin-left: 255px;
+    color: #000;
+    background: url(/images/wave.png) 0 100% repeat-x;
+}
+
+.contact-address {
+    min-height: 31px;
+    line-height: 31px;
+    padding-left: 45px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAfCAMAAAA7p6b/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABGlBMVEUAAAC5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubkAAAARl0yoAAAAXHRSTlMAE1un2PCkWhEQhfXzgAwz4dsqL/HqJA3fw1gbBtGI+2r6bwtkAkvEOotZc6oXGpO9oq+QiU037GvifQre2UP+QZWb5lWZsA/lT2kBGO74KGJ6zAQj9vktdX6dBfDl85kAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAABFElEQVQoz22R6VbCMBCFrwruIioubaMCgrhg3RUVBfcFd9zN+z+HTgjpJPT+uTPfae+ZmQBKXd09iaRMJnr7+hFpYHBItjU8kmrj0bTkGhtv4YmMtDU5RXh6RjWeH4jA91Q9K/75HFXzWZ2ZzVGbBxZUSsHMUKA2XcQieYkNVyKwhGWyFcZ9Aqsok60xHhJYxwYZwxAENrEV+/02dsh8Nz+PXbUU42q1PYh98orBFWoPisAhFbmOfXFU1fcJRajvc0z3wUnNuWet3vr31OFnOjNVtfC5eUo76SKa+ZLhK7bL9Y3BmYAf69bwO1gqa+w1bH7/oPDjExw9K/7iYjTogV6bHRxv7/LjEzH6kt9xGM2f36j5A8jOcW3PRBshAAAAAElFTkSuQmCC');
+    background-repeat: no-repeat;
+    background-position: 15px 0;
+}
+
+.contact-name {
+    padding-left: 45px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.contact-block {
+    padding-left: 45px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.contact-block {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAMAAABcOc2zAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAqFBMVEUAAAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAAAAAC1aDoOAAAANnRSTlMALm6awNru+y2c76HVahFr06Lr94Tfqnes3of2ip5pgOHgfYMK4pkIFNJ6Ac1y7fBneAUOm/3P8xTfAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAINJREFUCNdVitcSgkAQBEeiiIAZ051iQORUlLD//2neQlkl8zDT27XAwDAt23Fdx7ZMYwh41IuHkW5/HIRhNJlqnGGue7FcxfF6s9W4w17Iw7F7T06BOAMX0R5X7vQGZHemXKmc95HhyftSgCqY3vjwFCVQtkJ2gtKqqulfUNNQX/wiv3j0Hl27/4uPAAAAAElFTkSuQmCC') 21px 2px no-repeat;
+}
+
+.contact-block a {
+    color: #000;
+}
+
+.contact-desc {
+    padding-left: 45px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+// .content {
+//     width: 100%;
+//     float: left;
+    
+//     &__inner {
+//         padding: 20px;
+//     }
+
+//     p {
+//         &:not(:last-child) {
+//             margin-bottom: 25px;
+//         }
+//     }
+
+//     ul {
+//         &:not([class]) {
+//             margin-bottom: 25px;
+
+//             li {
+//                 color: #000;
+//             }
+//         }
+//     }
+
+//     img {
+//         & :not([class]) {
+//             max-width: 100%;
+//         }
+//     }
+// }
+
+// .sidebar + .content {
+//     padding-left: $sidebar-width + $sidebar-margin;
+// }
+
+@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1140px) {}
+@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 960px) {}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 568px) {}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}

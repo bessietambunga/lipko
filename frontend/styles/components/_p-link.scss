@@ -1,0 +1,9 @@
+.p-link {
+    border-bottom: 1px dashed;
+    text-decoration: none;
+
+    &:hover {
+        padding-bottom: 1px;
+        border-bottom: 0;
+    }
+}

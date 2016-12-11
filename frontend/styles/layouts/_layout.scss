@@ -1,0 +1,60 @@
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+
+    &__pusher {
+        padding-bottom: $footer-height + $footer-margin;
+    }
+
+    &__container {
+        @extend %layout;
+    }
+}
+
+.layout {
+    width: 910px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.layout-960 {
+    width: 960px;
+}
+
+.wrapper-main {
+    width: 100%;
+    height: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    background: #000 url(/images/underwater.png) no-repeat center top;
+    -webkit-background-size: auto calc(100% - 150px);
+    background-size: auto calc(100% - 150px);
+}
+
+.wrapper-main-open {
+    height: 100%;
+    overflow: hidden;
+}
+
+.wrapper-main-open .wrapper-main {
+    height: 100%;
+    top: 0;
+}
+
+
+@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1140px) {}
+@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 960px) {}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 568px) {}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}

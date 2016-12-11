@@ -1,0 +1,86 @@
+.breadcrumbs {
+    height: 56px;
+    font-size: 0;
+}
+
+.breadcrumbs ul li {
+    float: left;
+    margin-right: 20px;
+    padding: 23px 22px 23px 0;
+    background: url(/images/bc-ar.png) no-repeat right 50%;
+}
+
+.breadcrumbs ul li:last-child {
+    margin: 0;
+    padding-right: 0;
+    background: none;
+}
+
+.breadcrumbs ul li a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 400 14px/14px sans-serif;
+}
+
+.breadcrumbs ul li .home {
+    display: block;
+    width: 14px;
+    height: 12px;
+    background: url(/images/home.png) no-repeat;
+}
+
+
+// .breadcrumbs {
+// 	clear: both;
+// 	width: 100%;
+// 	padding: 0;
+// 	overflow: hidden;
+// 	margin-bottom: 15px;
+	
+// 	&__wrapper {
+// 		@extend %layout;
+// 		padding: 0;
+// 	}
+
+// 	&__list {
+// 		margin: 0;
+// 		padding: 0;
+// 		list-style-type: none;
+// 	}
+
+// 	&__item {
+// 		float: left; 
+// 		margin: 0;
+// 		padding: 0;
+// 		font-size: 0;
+// 		padding-right: 12px; 
+// 		margin-right: 8px;
+// 		background: none;
+// 		position: relative;
+// 		vertical-align: top;
+
+// 		&:not(:last-child):after { 
+// 			content: "/";
+// 			font-size: 1.4rem;
+// 			font-weight: 300;
+// 			color: #000;
+// 			position: absolute;
+// 			top: 0;
+// 			right: -2px;
+// 		}
+
+// 		&__link {
+// 			color: #435ba9;
+// 			font-size: 1.4rem;
+// 			font-weight: 300;
+// 			padding: 0;
+// 			display: block;
+// 			text-decoration: none;
+// 		}
+
+// 		&:last-child &__link {
+// 			color: #000;
+// 		}
+// 	}
+// }

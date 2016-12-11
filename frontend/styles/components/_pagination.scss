@@ -1,0 +1,131 @@
+.pagination {
+    margin-bottom: 47px;
+    clear: both;
+    text-align: center;
+    font-size: 0;
+}
+
+.pagination ul li {
+    display: inline-block;
+    margin: 0 1px;
+    vertical-align: middle;
+}
+
+.pagination ul li a {
+    width: 39px;
+    height: 39px;
+    display: block;
+    text-align: center;
+    line-height: 39px;
+    position: relative;
+    text-decoration: none;
+    color: #B7B7B7;
+    font-size: 16px;
+    font-weight: 700;
+    -webkit-transition: color .2s, border-color .2s;
+    -o-transition: color .2s, border-color .2s;
+    transition: color .2s, border-color .2s;
+}
+
+.pagination ul li a:hover {
+    color: #3b3b3b;
+}
+
+.pagination ul li.active a,
+.pagination ul li.active a:hover {
+    border: 3px solid #000;
+    border-radius: 45px;
+    color: #000;
+}
+
+.pagination ul li.disabled a {
+}
+
+.pagination ul li .pagination-icon {
+}
+
+.pagination ul li .pagination-icon span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -8px;
+}
+
+.pagination ul li .pagination-icon span:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    opacity: 0;
+    -webkit-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    transition: opacity .2s;
+}
+
+.pagination ul li .pagination-icon:hover span:before {
+    opacity: 1;
+}
+
+.pagination ul li .pagination-icon span,
+.pagination ul li .pagination-icon span:before {
+    background-image: url(/images/pagination.png);
+    background-repeat: no-repeat;
+    display: block;
+    height: 16px;
+}
+
+.pagination ul li .pagination-icon.last span,
+.pagination ul li .pagination-icon.first span,
+.pagination ul li .pagination-icon.last span:before,
+.pagination ul li .pagination-icon.first span:before {
+    width: 16px;
+}
+
+.pagination ul li .pagination-icon.prev span,
+.pagination ul li .pagination-icon.next span,
+.pagination ul li .pagination-icon.prev span:before,
+.pagination ul li .pagination-icon.next span:before {
+    width: 9px;
+}
+
+.pagination ul li .pagination-icon.last span,
+.pagination ul li .pagination-icon.first span {
+    margin-left: -8px;
+}
+
+.pagination ul li .pagination-icon.prev span,
+.pagination ul li .pagination-icon.next span {
+    margin-left: -5px;
+}
+
+.pagination ul li .pagination-icon.first span {
+    background-position: -18px 0;
+}
+
+.pagination ul li .pagination-icon.last span {
+    background-position: -34px 0;
+}
+
+.pagination ul li .pagination-icon.prev span {
+    background-position: 0 0;
+}
+
+.pagination ul li .pagination-icon.next span {
+    background-position: -9px 0;
+}
+
+.pagination ul li .pagination-icon.first span:before {
+    background-position: -18px -16px;
+}
+
+.pagination ul li .pagination-icon.last span:before {
+    background-position: -34px -16px;
+}
+
+.pagination ul li .pagination-icon.prev span:before {
+    background-position: 0 -16px;
+}
+
+.pagination ul li .pagination-icon.next span:before {
+    background-position: -9px -16px;
+}
