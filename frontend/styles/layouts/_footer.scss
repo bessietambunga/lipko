@@ -1,6 +1,6 @@
 .footer {
     margin: -137px 0 0;
-    height: 130px;
+    height: 131px;
     padding-top: 7px;
     font-size: 0;
     position: relative;
@@ -8,7 +8,7 @@
 }
 
 .footer-background {
-    height: 130px;
+    height: 131px;
     background-color: #ffb100;
     position: relative;
     z-index: 10;
@@ -28,7 +28,7 @@
     background: url(/images/bubbles.png) 0 20px no-repeat;
 }
 
-.footer-submarine {
+.footer-bear {
     width: 193px;
     height: 81px;
     position: absolute;
@@ -38,10 +38,12 @@
     z-index: 5;
     color: #FFF;
     font-size: 0;
+    overflow: hidden;
+    text-indent: -1000px;
     text-decoration: none;
 }
 
-.footer-submarine-inner {
+.footer-bear-inner {
     width: 193px;
     height: 81px;
     display: block;
@@ -50,17 +52,17 @@
     top: 0;
 }
 
-.footer-submarine-bg {
+.footer-bear-bg {
     width: 100%;
     height: 100%;
-    background: url(/images/submarine@2x.png) 0 0 no-repeat;
+    background: url(/images/bear.png) 0 0 no-repeat;
     display: block;
     position: absolute;
     left: 0;
     top: 0;
 }
 
-.footer-submarine-text {
+.footer-bear-text {
     width: 164px;
     height: 34px;
     display: block;
@@ -73,7 +75,7 @@
     text-shadow: 0 -1px 0 rgba(60, 0, 0, 0.39);
 }
 
-.footer-submarine-reverse .footer-submarine-bg {
+.footer-bear-reverse .footer-bear-bg {
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
@@ -82,7 +84,7 @@
     -ms-filter: "FlipH";
 }
 
-.footer-submarine-reverse .footer-submarine-text {
+.footer-bear-reverse .footer-bear-text {
     width: 153px;
     padding: 47px 0 0 40px;
 }

@@ -1,35 +1,34 @@
 .breadcrumbs {
     height: 56px;
     font-size: 0;
-}
 
-.breadcrumbs ul li {
-    float: left;
-    margin-right: 20px;
-    padding: 23px 22px 23px 0;
-    background: url(/images/bc-ar.png) no-repeat right 50%;
-}
+    &__item {
+        float: left;
+        margin-right: 20px;
+        padding: 23px 22px 23px 0;
+        background: url(/images/bc-ar.png) no-repeat right 50%;
 
-.breadcrumbs ul li:last-child {
-    margin: 0;
-    padding-right: 0;
-    background: none;
-}
+        &:last-child {
+            margin: 0;
+            padding-right: 0;
+            background: none;
+        }
 
-.breadcrumbs ul li a {
-    color: #000;
-    text-decoration: none;
-    text-transform: uppercase;
-    font: 400 14px/14px sans-serif;
-}
+        .home {
+            display: block;
+            width: 14px;
+            height: 12px;
+            background: url(/images/home.png) no-repeat;
+        }
 
-.breadcrumbs ul li .home {
-    display: block;
-    width: 14px;
-    height: 12px;
-    background: url(/images/home.png) no-repeat;
+        a {
+            color: #000;
+            text-decoration: none;
+            text-transform: uppercase;
+            font: 400 14px/14px sans-serif;
+        }
+    }
 }
-
 
 // .breadcrumbs {
 // 	clear: both;

@@ -11,25 +11,47 @@
     @@include('./components/_upper.html')
 
     @@include('./components/_header.html', {
-        "current": "about-us"
+        "current": "video"
     })
     
     <div class="container">
         <div class="layout">
             <div class="content">
-            
                 <div class="content_header">
-                    <h1>О компании</h1>
+                    <h1>События</h1>
+                    
+                    <h2>Метки:</h2>
+                    
+                    <div class="tags">
+                         <a href="">Зимняя ловля;</a> <a href="">Карп;</a> <a href="">«Classic»;</a> <a href="">Лето;</a> <a href="">Осень;</a> <a href="">Не клюёт;</a> <a href="">«Gold»;</a> <a href="">Зима;</a> <a href="">Лещь;</a> <a href="">Подлёдный лов;</a> <a href="">Плотва;</a> <a href="">Карась;</a> <a href="">Сазан;</a> <a href="">Толстолобик;</a> <a href="">Весна;</a> <a href="">Непогода;</a> <a href="">Видео;</a> <a href="">Фото;</a> <a href="">Амур;</a> <a href="">Фидер;</a> <a href="">Зимняя ловля;</a> <a href="">Карп;</a> <a href="">«Classic»;</a> <a href="">Лето;</a> <a href="">Осень;</a> <a href="">Не клюёт;</a>
+                    </div>
                 </div>
-                
-                @@include('./components/_breadcrumbs.html', {
-                    "page1": "Главная",
-                    "page2": "Цвета",
-                    "page3": "Зеленый"
-                })
-
             </div>
         </div>
+
+        <div class="list-item-layout clearfix">
+            <div class="list-item-content">
+                <div class="list-item-date">20 ноября <span class="year">2014</span></div>
+                <div class="list-item-name">
+                    Ловля карпа на прикормку «Classic»
+                </div>
+            </div>
+            
+            <div class="video">
+                <img src="../images/events/video.jpg" height="500" width="970" alt="">
+            </div>
+
+            <div class="video video-last">
+                <img src="../images/events/video.jpg" height="500" width="970" alt="">
+            </div>
+            
+            <div class="list-item-content">
+                <div class="list-item-tags">
+                    <strong>Метки:</strong> <a href="">Зимняя ловля;</a> <a href="">Карп;</a> <a href="">«Classic»;</a> <a href="">Лето</a>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 
