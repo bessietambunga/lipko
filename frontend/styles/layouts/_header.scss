@@ -5,20 +5,40 @@
     background-color: #ffc20e;
 }
 
+.header .layout {
+    max-width: 946px;
+}
+
 .header-logo {
-    width: 232px;
-    height: 70px;
-    background: url(/images/header-logo.png) 0 0 no-repeat;
+    width: 200px;
+    height: 69px;
+    background: url(/images/logo.png) 0 0 no-repeat;
     position: absolute;
-    left: 0px;
+    left: 52px;
     top: 13px;
 }
 
-.header .nav {
+.header .header-cart {
+    width: 48px;
+    height: 63px;
+    position: absolute;
+    right: 45px;
+    top: 29px;
+    color: #000;
+    text-align: center;
+    font-size: 2.1rem;
+    font-weight: 400;
+    line-height: 69px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: url(/images/cart-bottle.png) 0 0 no-repeat;
+}
+
+.header .header-navigation {
     width: auto;
     position: absolute;
-    right: 0;
-    top: 47px;
+    left: 313px;
+    top: 44px;
 }
 
 .header .nav-list {
@@ -39,26 +59,6 @@
     text-transform: uppercase;
     text-decoration: underline;
 }
-
-.header-cart {
-    width: 84px;
-    height: 63px;
-    padding-right: 4px;
-    position: absolute;
-    top: 87px;
-    right: 5px;
-    z-index: 100;
-    display: block;
-    background: url(/images/cart.png) 0 0 no-repeat;
-    color: #000;
-    font-size: 22px;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    line-height: 69px;
-}
-
 
 @media only screen and (max-width: 1280px) {}
 @media only screen and (max-width: 1140px) {}

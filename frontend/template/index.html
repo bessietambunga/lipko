@@ -6,7 +6,24 @@
 @@include('./components/_svgstore.html')
 @@include('./popup/_popup.html')
 
-@@include('./components/_upper.html')
+<div class="wrapper is-main is-open">
+    <div class="layout">
+        
+        <div class="main-center">
+            <div class="main-logo">
+                <div class="main-logo__image"></div>
+                <div class="main-logo__slogon">
+                    только натуральный мёд
+                </div>
+            </div>
+
+            @@include('./components/_navigation.html', {
+                "classname": "is-darked"
+            })
+        </div>
+
+    </div>
+</div>
 
 @@include('./components/_footer.html')
 @@include('./components/_scripts.html')

@@ -8,8 +8,6 @@
 
 <div class="wrapper" id="wrapper-main">
     
-    @@include('./components/_upper.html')
-
     @@include('./components/_header.html', {
         "current": "catalogue"
     })
@@ -22,46 +20,44 @@
                 </div>
                 
                 <div class="filter">
-                    ТОВАР: Мёд  Пыльца    Соты    Все
-                    
-                    СОРТ: Липа Карп    Акация    Каштан    Разнотравье    Гречишный    Горный  Плющ
-                </div>
+                    <div class="filter__row clearfix">
+                        
+                        <div class="filter__label">
+                            ТОВАР:
+                        </div>
 
-                <div class="mark-wrap">
-                    <div class="mark-wrap-group">
-                        <div class="mark-wrap-group-name">Серия:</div>
-                        <div class="mark-wrap-group-content"><div class="inner">
-                            <div class="mark">
-                                <ul>
-                                    <li class="active"><a href=""><span class="dashed">Classik</span></a></li>
-                                    <li><a href=""><span class="dashed">Standart</span></a></li>
-                                    <li><a href=""><span class="dashed">Gold</span></a></li>
-                                    <li><a href=""><span class="dashed">Все</span></a></li>
-                                </ul>
-                            </div>
-                        </div></div>
+                        <div class="filter__group">
+
+                            <a href="" class="filter__tab is-active"><span class="filter__tab__name">Мёд</span></a>
+                            <a href="" class="filter__tab"><span class="filter__tab__name">Пыльца</span></a>
+                            <a href="" class="filter__tab"><span class="filter__tab__name">Соты</span></a>
+                            <a href="" class="filter__tab"><span class="filter__tab__name">Все</span></a>
+
+                        </div>
+
                     </div>
 
-                    <div class="mark-wrap-group">
-                        <div class="mark-wrap-group-name">Тип:</div>
-                        <div class="mark-wrap-group-content"><div class="inner">
-                            <div class="mark">
-                                <ul>
-                                    <li><a href=""><span class="dashed">Карп</span></a></li>
-                                    <li><a href=""><span class="dashed">Амур</span></a></li>
-                                    <li><a href=""><span class="dashed">Толстолобик</span></a></li>
-                                    <li><a href=""><span class="dashed">Карась</span></a></li>
-                                    <li><a href=""><span class="dashed">Метод-мик</span>с</a></li>
-                                    <li><a href=""><span class="dashed">Фидер-микс</span></a></li>
-                                    <li><a href=""><span class="dashed">Лещ-плотва</span></a></li>
-                                    <li><a href=""><span class="dashed">Универсальная</span></a></li>
-                                    <li><a href=""><span class="dashed">База</span></a></li>
-                                    <li class="active"><a href=""><span class="dashed">Все</a></li>
-                                </ul>
-                            </div>
-                        </div></div>
+                    <div class="filter__row clearfix">
+                        
+                        <div class="filter__label">
+                            СОРТ:
+                        </div>
+
+                        <div class="filter__group">
+
+                            <a href="" class="filter__tab"><span class="filter__tab__name">Липа</span></a>
+                            <a href="" class="filter__tab"><span class="filter__tab__name">Акация</span></a>
+                            <a href="" class="filter__tab"><span class="filter__tab__name">Каштан</span></a>
+                            <a href="" class="filter__tab"><span class="filter__tab__name">Разнотравье</span></a>
+                            <a href="" class="filter__tab"><span class="filter__tab__name">Гречишный</span></a>
+                            <a href="" class="filter__tab"><span class="filter__tab__name">Горный</span></a>
+                            <a href="" class="filter__tab"><span class="filter__tab__name">Плющ</span></a>
+
+                        </div>
+
                     </div>
                 </div>
+                
             </div>
         </div>
         
@@ -70,7 +66,7 @@
                 <div class="list-item-layout clearfix">
                     <div class="list-item-aside">
                         <div class="list-item-image">
-                            <img src="../images/catalog/1.jpg" alt="">
+                            <img src="../images/hunny.png" alt="">
                         </div>
                         <div class="list-item-price">Цена: <strong>800</strong></div>
                     </div>
@@ -78,7 +74,7 @@
                     <div class="list-item-content">
                         <div class="inner">
                             <div class="list-item-name">
-                                <a href="catalogue-item.html" class="list-item-link">Карп (красный) клубника</a>
+                                <a href="catalogue-item.html" class="list-item-link">Липа</a>
                                 <span class="list-item-article">арт. ССС-001</span>
                             </div>
                             <div class="list-item-description">
@@ -89,23 +85,13 @@
                                 <table>
                                     <tr>
                                         <td><img src="../images/ico/1.png" alt=""></td>
-                                        <td><strong>Серия:</strong></td>
-                                        <td>Классик</td>
-                                    </tr>
-                                    <tr>
-                                        <td><img src="../images/ico/2.png" alt=""></td>
-                                        <td><strong>Тип:</strong></td>
-                                        <td>Карп</td>
-                                    </tr>
-                                    <tr>
-                                        <td><img src="../images/ico/3.png" alt=""></td>
-                                        <td><strong>Аромат:</strong></td>
-                                        <td>Клубника</td>
+                                        <td><strong>Продукт:</strong></td>
+                                        <td>Мёд</td>
                                     </tr>
                                     <tr>
                                         <td><img src="../images/ico/4.png" alt=""></td>
-                                        <td><strong>Цвет:</strong></td>
-                                        <td><img src="../images/ico/red.png" alt=""></td>
+                                        <td><strong>Сорт:</strong></td>
+                                        <td>Акация</td>
                                     </tr>
                                     <tr>
                                         <td><img src="../images/ico/5.png" alt=""></td>
@@ -131,7 +117,7 @@
                 <div class="list-item-layout clearfix">
                     <div class="list-item-aside">
                         <div class="list-item-image">
-                            <img src="../images/catalog/1.jpg" alt="">
+                            <img src="../images/hynny-2.png" alt="">
                         </div>
                         <div class="list-item-price">Цена: <strong>800</strong></div>
                     </div>
@@ -139,7 +125,7 @@
                     <div class="list-item-content">
                         <div class="inner">
                             <div class="list-item-name">
-                                <a href="catalogue-item.html" class="list-item-link">Карп (жёлтый) кукуруза</a>
+                                <a href="catalogue-item.html" class="list-item-link">Липа</a>
                                 <span class="list-item-article">арт. ССС-004</span>
                             </div>
                             <div class="list-item-description">
@@ -150,23 +136,13 @@
                                 <table>
                                     <tr>
                                         <td><img src="../images/ico/1.png" alt=""></td>
-                                        <td><strong>Серия:</strong></td>
-                                        <td>Классик</td>
-                                    </tr>
-                                    <tr>
-                                        <td><img src="../images/ico/2.png" alt=""></td>
-                                        <td><strong>Тип:</strong></td>
-                                        <td>Карп</td>
-                                    </tr>
-                                    <tr>
-                                        <td><img src="../images/ico/3.png" alt=""></td>
-                                        <td><strong>Аромат:</strong></td>
-                                        <td>Клубника</td>
+                                        <td><strong>Продукт:</strong></td>
+                                        <td>Мёд</td>
                                     </tr>
                                     <tr>
                                         <td><img src="../images/ico/4.png" alt=""></td>
-                                        <td><strong>Цвет:</strong></td>
-                                        <td><img src="../images/ico/yellow.png" alt=""> <img src="../images/ico/red.png" alt=""></td>
+                                        <td><strong>Сорт:</strong></td>
+                                        <td>Липа</td>
                                     </tr>
                                     <tr>
                                         <td><img src="../images/ico/5.png" alt=""></td>
@@ -192,7 +168,7 @@
                 <div class="list-item-layout clearfix">
                     <div class="list-item-aside">
                         <div class="list-item-image">
-                            <img src="../images/catalog/1.jpg" alt="">
+                            <img src="../images/hynny-2.png" alt="">
                         </div>
                         <div class="list-item-price">Цена: <strong>800</strong></div>
                     </div>
@@ -200,7 +176,7 @@
                     <div class="list-item-content">
                         <div class="inner">
                             <div class="list-item-name">
-                                <a href="catalogue-item.html" class="list-item-link">Амур (зелёный) анис длинное предложение в две строки</a>
+                                <a href="catalogue-item.html" class="list-item-link">Липа/a>
                                 <span class="list-item-article">арт. ССА-005</span>
                             </div>
                             <div class="list-item-description">
@@ -211,23 +187,13 @@
                                 <table>
                                     <tr>
                                         <td><img src="../images/ico/1.png" alt=""></td>
-                                        <td><strong>Серия:</strong></td>
-                                        <td>Классик</td>
-                                    </tr>
-                                    <tr>
-                                        <td><img src="../images/ico/2.png" alt=""></td>
-                                        <td><strong>Тип:</strong></td>
-                                        <td>Карп</td>
-                                    </tr>
-                                    <tr>
-                                        <td><img src="../images/ico/3.png" alt=""></td>
-                                        <td><strong>Аромат:</strong></td>
-                                        <td>Клубника</td>
+                                        <td><strong>Продукт:</strong></td>
+                                        <td>Мёд</td>
                                     </tr>
                                     <tr>
                                         <td><img src="../images/ico/4.png" alt=""></td>
-                                        <td><strong>Цвет:</strong></td>
-                                        <td><img src="../images/ico/green.png" alt=""></td>
+                                        <td><strong>Сорт:</strong></td>
+                                        <td>Липа</td>
                                     </tr>
                                     <tr>
                                         <td><img src="../images/ico/5.png" alt=""></td>

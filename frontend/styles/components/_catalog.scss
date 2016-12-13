@@ -28,12 +28,16 @@
 
 .list-item {
     clear: both;
-    margin-bottom: 50px;
+    padding: 60px 0 55px;
     position: relative;
     background-repeat: repeat-x;
     background-color: #ffffff;
     background-position: 0 100%;
-    background-image: url(/images/list-item-bg.png);
+    border-top: 1px solid #b7b7b7;
+
+    &:last-child {
+        border-bottom: 1px solid #b7b7b7;
+    }
 }
 
 .list-item:after {
@@ -240,6 +244,10 @@ a.list-item-link:hover {
     color: #000;
     font-size: 16px;
     vertical-align: middle;
+
+    &:first-child {
+        text-align: center;
+    }
 }
 
 .list-item-parameters table tr td img {

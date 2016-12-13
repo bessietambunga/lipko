@@ -1,0 +1,55 @@
+.main-center {
+    height: 220px;
+    position: absolute;
+    left: 0;
+    top: -137px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.main-logo {
+    clear: both;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto 28px;
+
+    &__image {
+        width: 485px;
+        height: 124px;
+        margin: 0 auto;
+        margin-bottom: 8px;
+        background: url(/images/main-logo.png) no-repeat 100% 0;
+    }
+
+    &__slogon {
+        color: #231f20;
+        font-size: 2.8rem;
+        line-height: 1;
+        font-weight: 700;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 71px;
+        margin: 0 auto;
+
+        &:before, &:after {
+            width: 59px;
+            height: 8px;
+            content: "";
+            position: absolute;
+            top: 8px;
+        }
+
+        &:before {
+            left: 0;
+            background-image: url(/images/logo-before.png);
+        }
+
+        &:after {
+            right: 0;
+            background-image: url(/images/logo-after.png);
+        }
+    }
+}
