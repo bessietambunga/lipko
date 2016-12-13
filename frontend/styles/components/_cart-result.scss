@@ -1,0 +1,47 @@
+.cart-result {
+    clear: both;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+
+    &__button {
+        color: #000;
+        height: 53px;
+        margin: 0 11px;
+        min-width: 250px;
+        font-size: 1.8rem;
+        font-weight: 700;
+        border-radius: 5px;
+        line-height: 48px;
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        border: 3px solid #e4e4e4;
+        transition: border-color $a-time, background-color $a-time;
+
+        &:hover {
+            border-color: #ffb100;
+            background-color: #ffb100;
+        }
+    }
+
+    &__total {
+        font-weight: 700;
+        margin-left: 20px;
+        display: inline-block;
+        vertical-align: middle;
+
+        strong {
+            color: #000;
+            font-family: 'Europe_Ext', 'Roboto Condensed', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            height: 21px;
+            margin-left: 5px;
+            vertical-align: middle;
+            padding-right: 33px;
+            background: url(../images/rub.png) 100% 1px no-repeat;
+        }
+    }
+}

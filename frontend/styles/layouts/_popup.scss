@@ -17,46 +17,41 @@
 	position: absolute;
     z-index: 9999;
     display: none;
-	background-color: #FFB100;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
 	border-radius: 10px;
+    background-color: #FFB100;
 	border: 1px solid #ffc032;
-	-moz-box-shadow: 0 10px 28.5px 1.5px rgba(62, 58, 49, 0.3), 0 0 18px rgba(255, 187, 32, 0.28), inset 0 0 2px rgba(254, 237, 195, 0.51);
-	-webkit-box-shadow: 0 10px 28.5px 1.5px rgba(62, 58, 49, 0.3), 0 0 18px rgba(255, 187, 32, 0.28), inset 0 0 2px rgba(254, 237, 195, 0.51);
 	box-shadow: 0 10px 28.5px 1.5px rgba(62, 58, 49, 0.3), 0 0 18px rgba(255, 187, 32, 0.28), inset 0 0 2px rgba(254, 237, 195, 0.51);
 }
 
-.popup-close, .popup-close:before {
+.popup-close {
 	width: 33px;
-	height: 33px;
+    height: 33px;
+	line-height: 33px;
+    text-align: center;
 	position: absolute;
-	background-image: url('data:image/png;base64,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');
-	background-repeat: no-repeat;
 }
 
 .popup-close {
+    color: #000;
 	top: 16px;
     right: 14px;
     background-position: 0 0;
 }
 
-.popup-close:before {
-	content: "";
-    top: 0;
-    left: 0;
-    opacity: 0;
-    background-position: 0 100%;
-	-webkit-transition: opacity .2s;
-	-o-transition: opacity .2s;
-	transition: opacity .2s;
+.popup-close-ico {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
 }
-.popup-close:hover:before {
-	opacity: 1;
+
+.popup-close:hover {
+	color: #f00;
 }
+
 .popup-header {
-	padding: 37px 29px 0;
-    margin-bottom: 8px;
+	padding: 22px 29px 0;
+    margin-bottom: 15px;
     color: #000;
     font-size: 18px;
     font-weight: 400;

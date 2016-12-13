@@ -1,11 +1,79 @@
 ;(function($) {
     $.cart = {
+        initRequestClick: function()
+        {
+            $('body').on('click', '.j-remover-request', function(e){
+                e.preventDefault();
+
+                var $remover = $(this).closest('.remover'), product = $(this).data('element'), status = $(this).data('status');
+
+                if (status !== 0)
+                {
+                    if ($('#cart-product-'+product).length)
+                    {
+                        $('#cart-product-'+product).fadeOut(function(){
+                            $(this).remove();
+                        });
+                    }
+
+                    console.log(product + ' as ' + status);
+                }
+                
+                setTimeout(function(){
+                    $remover.fadeOut(function(){
+                        $(this).remove();
+                    });
+                }, 150);
+
+                return !1;
+            });
+        },
+
     	init: function()
     	{
     		$.cart.initBuy();
     		$.cart.initRemove();
     		$.cart.initControll();
+
+            $.cart.initRequestClick();
+
+            $('body').on('click', '.j-cart-remove', function(e){
+                e.preventDefault();
+
+                if (!$(this).closest('.list-item-footer').find('.remover').length)
+                {
+                    var $remover, product = $(this).data('element');
+
+                    $remover = [
+                        '<div class="remover">',
+                            '<div class="remover__content">',
+                                '<div class="remover__title">',
+                                    'Действительно удалить?',
+                                '</div>',
+
+                                '<div class="remover__buttons">',
+                                    '<a href="#" data-element="' + product + '" data-status="1" class="remover__button is-yes j-remover-request">Да</a>',
+                                    '<a href="#" data-element="' + product + '" data-status="0" class="remover__button is-no j-remover-request">Нет</a>',
+                                '</div>',
+                            '</div>',
+                        '</div>'
+                    ].join(' ');
+                    
+                    $(this).closest('.list-item-footer').append($remover);
+                }
+                else
+                {
+                    var $remover = $(this).closest('.list-item-footer').find('.remover');
+
+                    $remover.fadeOut(function(){
+                        $(this).remove();
+                    });
+                }
+
+                return !1;
+            });
     	},
+
     	initBuy: function()
     	{
     		$('.add-cart-trigger').on('click', function(e){
