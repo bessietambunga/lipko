@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/css/main.min.css">
+    <link rel="stylesheet" href="../css/main.min.css">
 
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <meta content="skype_toolbar_parser_compatible" name="skype_toolbar">
@@ -17,14 +17,14 @@
     <meta content="address=no" name="format-detection">
     <meta content="telephone=no" name="format-detection">
     
-    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/favicon/favicon.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../favicon../favicon.png">
     
     <!--[if IE]>
-        <link rel="shortcut icon" href="/favicon/favicon.ico">
+        <link rel="shortcut icon" href="../favicon../favicon.ico">
         <meta http-equiv="cleartype" content="on">
         <meta http-equiv="imagetoolbar" content="false">
         <script src="https://developer.cdn.mozilla.net/media/js/libs/html5.js"></script>
@@ -81,59 +81,143 @@
     </div>
 </div>
 
-<div class="wrapper is-main is-open">
-    <div class="layout">
-        
-        <div class="main-center">
-            <div class="main-logo">
-                <div class="main-logo__image"></div>
-                <div class="main-logo__slogon">
-                    только натуральный мёд
-                </div>
-            </div>
+<div class="wrapper" id="wrapper-main">
+    
+    <span class="sandwich js-sandwich-menu">
+	<span class="sandwich__layer">Menu</span>
+</span>
 
-            <nav class="nav" id="navigation" role="navigation">
+<div class="menu-overlay" id="menu-overlay"></div>
+
+<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+	<div class="layout">
+		
+		<a href="/markup/index.html" class="header-logo" rel="home" itemprop="url" accesskey="1" data-instant>
+			<span itemprop="name"></span>
+		</a>
+	
+		<div class="header-navigation">
+			<nav class="nav" id="navigation" role="navigation">
     <ul class="nav-list">
         <li class="nav-list-item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-            <a href="/about-us.html" itemprop="url" class="nav-list-item-link is-darked">
+            <a href="/markup/about-us.html" itemprop="url" class="nav-list-item-link">
                 <span class="nav-list-item-link__name" itemprop="name">О НАС</span>
             </a>
         </li>
         
         <li class="nav-list-item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-            <a href="/catalogue.html" itemprop="url" class="nav-list-item-link is-darked">
+            <a href="/markup/catalogue.html" itemprop="url" class="nav-list-item-link">
                 <span class="nav-list-item-link__name" itemprop="name">КАТАЛОГ</span>
             </a>
         </li>
 
         <li class="nav-list-item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-            <a href="/gallery.html" itemprop="url" class="nav-list-item-link is-darked">
+            <a href="/markup/gallery.html" itemprop="url" class="nav-list-item-link">
                 <span class="nav-list-item-link__name" itemprop="name">ГАЛЕРЕЯ</span>
             </a>
         </li>
 
         <li class="nav-list-item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-            <a href="/delivery.html" itemprop="url" class="nav-list-item-link is-darked">
+            <a href="/markup/delivery.html" itemprop="url" class="nav-list-item-link">
                 <span class="nav-list-item-link__name" itemprop="name">ДОСТАВКА</span>
             </a>
         </li>
 
         <li class="nav-list-item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-            <a href="/information.html" itemprop="url" class="nav-list-item-link is-darked">
+            <a href="/markup/information.html" itemprop="url" class="nav-list-item-link _current">
                 <span class="nav-list-item-link__name" itemprop="name">ПОЛЕЗНАЯ ИНФОРМАЦИЯ</span>
             </a>
         </li>
 
         <li class="nav-list-item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-            <a href="/contact.html" itemprop="url" class="nav-list-item-link is-darked">
+            <a href="/markup/contact.html" itemprop="url" class="nav-list-item-link">
                 <span class="nav-list-item-link__name" itemprop="name">КОНТАКТЫ</span>
             </a>
         </li>
     </ul>
 </nav>
-        </div>
+		</div>
 
+		<a href="/markup/cart.html" class="header-cart">2</a>
+
+	</div>
+</header>
+    
+    <div class="container">
+        <div class="layout">
+            <div class="content">
+                <div class="content_header">
+                    <h1>ПОЛЕЗНАЯ ИНФОРМАЦИЯ</h1>
+                </div>
+            </div>
+                
+            <div class="contact">
+                <div class="contact-address">
+                    г. Краснодар, ул. Кубанская, дом 32/4
+                </div>
+
+                <div class="contact-name">
+                    Магазин “День рыбака”
+                </div>
+                
+                <div class="contact-block">
+                    <strong>тел.:</strong> +7(861) 231-37-13<br>
+                    <strong>e-mail:</strong> 2313713@mail.ru<br>
+                    <strong>сайт:</strong> <a href="" target="_blank">www.fisher-day.ru</a>
+                </div>
+                
+                <div class="contact-desc">
+                    Комментарий (максимум 250 символов); что-то о магазине, какая-то информация о том как добраться или время работы в выходные дни или праздники.
+                </div>
+            </div>
+            
+            <div class="contact">
+                <div class="contact-address">
+                    г. Краснодар, ул. Бабушкина, дом 83
+                </div>
+                <div class="contact-name">
+                    Магазин “MASTER FISH”
+                </div>
+                <div class="contact-block">
+                    <strong>тел.:</strong> +7(918) 241-05-78<br>
+                    <strong>сайт:</strong> <a href="" target="_blank">www.rodmaker.ru</a>
+                </div>
+            </div>
+            
+            <div class="contact">
+                <div class="contact-address">
+                    ст. Елизаветинская, ул. Кубанская, дом 65
+                </div>
+                <div class="contact-name">
+                    Магазин “Берег Кубани”
+                </div>
+                <div class="contact-block">
+                    <strong>тел.:</strong> +7(918) 259-19-33, +7(918) 313-42-79<br>
+                    <strong>сайт:</strong> <a href="" target="_blank">www.svetlana.ru</a>
+                </div>
+            </div>
+            
+            <div class="contact">
+                <div class="contact-address">
+                    г. Краснодар, ул. Кубанская, дом 32/4
+                </div>
+                <div class="contact-name">
+                    Магазин “День рыбака”
+                </div>
+                <div class="contact-block">
+                    <strong>тел.:</strong> +7(861) 231-37-13<br>
+                    <strong>e-mail:</strong> 2313713@mail.ru<br>
+                    <strong>сайт:</strong> <a href="" target="_blank">www.fisher-day.ru</a>
+                </div>
+
+                <div class="contact-desc">
+                    Комментарий (максимум 250 символов); что-то о магазине, какая-то информация о том как добраться или время работы в выходные дни или праздники.
+                </div>
+            </div>
+
+        </div>
     </div>
+    
 </div>
 
 <footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
@@ -149,6 +233,12 @@
 		<div class="layout">
 			<div class="footer-copyright"><span class="footer-copyright_in">© 2016 LipkoPolezno<br>все права защищены</span></div>
 			
+			<div class="footer-law-info">
+				<div class="footer-copyright_in">
+	                Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 (2) ГK РФ.
+	            </div>
+            </div>
+
 			<div class="footer-contacts">
 				<div class="footer-contacts_city">г. Краснодар</div>
 				<div class="footer-contacts_phone">+7 (918) <strong>910-45-45</strong></div>

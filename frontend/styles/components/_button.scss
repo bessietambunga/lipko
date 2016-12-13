@@ -1,45 +1,23 @@
 .button {
-    height: 48px;
-    padding: 0 42px;
-    
-    color: #fff;
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 52px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-
     @extend %button;
+    height: 38px;
+    padding: 0 25px;
+    border-radius: 4px;
+    color: #878787;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 35px;
+    background-color: #fff;
+    border: 2px solid #c6c6c6;
+    text-transform: uppercase;
+    text-shadow: 0 0.1rem 0 #fff;
+    box-shadow: inset 0 0 0.5rem rgba(255, 255, 190, 0.75);
+    transition: background-color $a-time, text-shadow $a-time, border-color $a-time, color $a-time;
 
-    border: 0;
-    border-radius: 5px;
-    background-color: #f6171e;
-    box-shadow: 0 2px 0 0 #ae0005;
-
-    &:visited {
+    &:hover {
         color: #fff;
-    }
-
-    &_submit {
-        display: inline-block;
-        vertical-align: middle;
-    }
-
-    &:hover, &:focus {
-        color: #fff;
-        background-color: darken(#f6171e, 10%);
-    }
-
-    &.disabled {
-        background: #ccc !important;
-        cursor: not-allowed !important;
-        background: #ccc !important;
-
-        &, &:hover {
-            -webkit-box-shadow: none !important;
-            box-shadow:none !important;
-            background: #ccc !important;
-        }
+        text-shadow: none;
+        border-color: #ff0000;
+        background-color: #ff0000;
     }
 }

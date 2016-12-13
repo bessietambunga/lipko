@@ -29,8 +29,8 @@
 .selectbox .select .text { display: block; overflow: hidden; padding: 0; width: 100%; height: 100%; text-overflow: ellipsis; white-space: nowrap; }
 .selectbox .trigger, .selectbox .trigger .arrow { position: absolute; width: 37px; height: 37px; }
 .selectbox .trigger { top: 0px; right: 0px; }
-.selectbox .trigger .arrow { top: 0; left: 0; display: block; margin: 0; background: url(/images/select-passive.png) no-repeat center center; }
-.selectbox-active .trigger .arrow { background-image: url(/images/select.png); }
+.selectbox .trigger .arrow { top: 0; left: 0; display: block; margin: 0; background: url(../images/select-passive.png) no-repeat center center; }
+.selectbox-active .trigger .arrow { background-image: url(../images/select.png); }
 .selectbox .dropdown { position: absolute; top: 37px; left: 0; z-index: 1001; margin: 0; padding: 7px 0; width: 100%; color: #cb161a; }
 .selectbox ul { list-style-type: none; }
 .selectbox li { margin: 0; padding: 8px 14px; border: none; background-image: none; }

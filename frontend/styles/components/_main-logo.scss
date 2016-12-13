@@ -19,7 +19,7 @@
         height: 124px;
         margin: 0 auto;
         margin-bottom: 8px;
-        background: url(/images/main-logo.png) no-repeat 100% 0;
+        background: url(../images/main-logo.png) no-repeat 100% 0;
     }
 
     &__slogon {
@@ -44,12 +44,12 @@
 
         &:before {
             left: 0;
-            background-image: url(/images/logo-before.png);
+            background-image: url(../images/logo-before.png);
         }
 
         &:after {
             right: 0;
-            background-image: url(/images/logo-after.png);
+            background-image: url(../images/logo-after.png);
         }
     }
 }

@@ -3,7 +3,7 @@
 }
 
 .content_header {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .content_header h1 {
@@ -15,7 +15,20 @@
 }
 
 .layout-960 .content_header h1 {
-    padding-left: 25px;
+    // padding-left: 25px;
+}
+
+.page-container {
+    font-size: 14px;
+    vertical-align: top;
+}
+
+.page-container p {
+    line-height: 20px;
+    
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
 }
 
 .contact {
@@ -23,7 +36,7 @@
     margin-bottom: 30px;
     margin-left: 255px;
     color: #000;
-    background: url(/images/wave.png) 0 100% repeat-x;
+    background: url(../images/wave.png) 0 100% repeat-x;
 }
 
 .contact-address {
