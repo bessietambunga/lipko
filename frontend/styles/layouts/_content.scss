@@ -1,5 +1,10 @@
 .content {
     margin-left: 300px;
+
+    &.is-text {
+        margin-left: 0;
+        padding: 0 10px 0 50px;
+    }
 }
 
 .content_header {
@@ -32,20 +37,18 @@
 }
 
 .contact {
+    color: #000;
     padding-bottom: 18px;
     margin-bottom: 30px;
-    margin-left: 255px;
-    color: #000;
     background: url(../images/wave.png) 0 100% repeat-x;
 }
 
 .contact-address {
-    min-height: 31px;
-    line-height: 31px;
-    padding-left: 45px;
     color: #000;
     font-size: 20px;
     font-weight: 700;
+    min-height: 31px;
+    line-height: 31px;
     margin-bottom: 15px;
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAfCAMAAAA7p6b/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABGlBMVEUAAAC5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubkAAAARl0yoAAAAXHRSTlMAE1un2PCkWhEQhfXzgAwz4dsqL/HqJA3fw1gbBtGI+2r6bwtkAkvEOotZc6oXGpO9oq+QiU037GvifQre2UP+QZWb5lWZsA/lT2kBGO74KGJ6zAQj9vktdX6dBfDl85kAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAABFElEQVQoz22R6VbCMBCFrwruIioubaMCgrhg3RUVBfcFd9zN+z+HTgjpJPT+uTPfae+ZmQBKXd09iaRMJnr7+hFpYHBItjU8kmrj0bTkGhtv4YmMtDU5RXh6RjWeH4jA91Q9K/75HFXzWZ2ZzVGbBxZUSsHMUKA2XcQieYkNVyKwhGWyFcZ9Aqsok60xHhJYxwYZwxAENrEV+/02dsh8Nz+PXbUU42q1PYh98orBFWoPisAhFbmOfXFU1fcJRajvc0z3wUnNuWet3vr31OFnOjNVtfC5eUo76SKa+ZLhK7bL9Y3BmYAf69bwO1gqa+w1bH7/oPDjExw9K/7iYjTogV6bHRxv7/LjEzH6kt9xGM2f36j5A8jOcW3PRBshAAAAAElFTkSuQmCC');
     background-repeat: no-repeat;
@@ -53,14 +56,12 @@
 }
 
 .contact-name {
-    padding-left: 45px;
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .contact-block {
-    padding-left: 45px;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -76,47 +77,11 @@
 }
 
 .contact-desc {
-    padding-left: 45px;
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
     margin-bottom: 15px;
 }
-
-// .content {
-//     width: 100%;
-//     float: left;
-    
-//     &__inner {
-//         padding: 20px;
-//     }
-
-//     p {
-//         &:not(:last-child) {
-//             margin-bottom: 25px;
-//         }
-//     }
-
-//     ul {
-//         &:not([class]) {
-//             margin-bottom: 25px;
-
-//             li {
-//                 color: #000;
-//             }
-//         }
-//     }
-
-//     img {
-//         & :not([class]) {
-//             max-width: 100%;
-//         }
-//     }
-// }
-
-// .sidebar + .content {
-//     padding-left: $sidebar-width + $sidebar-margin;
-// }
 
 @media only screen and (max-width: 1280px) {}
 @media only screen and (max-width: 1140px) {}
