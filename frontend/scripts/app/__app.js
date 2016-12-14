@@ -139,7 +139,39 @@ if (!Array.prototype.indexOf) {
                     $('html, body').animate({ scrollTop: $(this).offset().top }, 'slow');
                 }
             });
+        
+            $('body').on('mouseenter', '.nav-list-item', function(e){
+                if ($(this).find('.submenu').length)
+                {
+                    var $this = $(this),
+                        $submenu = $this.find('.submenu');
 
+                    setTimeout(function(){
+                        $submenu.addClass('is-show');
+
+                        setTimeout(function(){
+                            $submenu.addClass('is-animate');
+                        }, 10);
+                    }, 50);
+                }
+            });
+            
+            $('body').on('mouseleave', '.nav-list-item', function(e){
+                if ($(this).find('.submenu').length)
+                {
+                    var $this = $(this),
+                        $submenu = $this.find('.submenu');
+
+                    setTimeout(function(){
+                        $submenu.removeClass('is-animate');
+
+                        setTimeout(function(){
+                            $submenu.removeClass('is-show');
+                        }, 250);
+                    }, 50);
+                }
+            });
+            
             if( typeof $.initPopups !== 'undefined' )
             {
                 $.initPopups();
