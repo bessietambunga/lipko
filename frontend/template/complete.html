@@ -1,0 +1,33 @@
+@@include('./components/_meta.html', {
+    "title": "Index",
+    "bodyclass": ""
+})
+
+@@include('./components/_svgstore.html')
+@@include('./popup/_popup.html')
+
+<div class="wrapper" id="wrapper-main">
+    
+    @@include('./components/_header.html', {
+        "current": "contact"
+    })
+
+    <div class="container">
+        <div class="layout">
+            <div class="content is-text">
+                <div class="page-container">
+                    
+                    <div class="form-order__complete">
+                        <div class="form-order__complete__middle">
+                            Заявка <span class="form-order__complete__icon"></span> отправлена
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('./components/_footer.html')
+@@include('./components/_scripts.html')

@@ -21,6 +21,35 @@
         margin-bottom: 55px;
     }
 
+    &__complete {
+        width: 385px;
+        height: 159px;
+        line-height: 159px;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 5px;
+        background-color: #ffc20e;
+
+        &__middle {
+            color: #000;
+            font-size: 2.4rem;
+            font-weight: 400;
+            line-height: 67px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        &__icon {
+            width: 59px;
+            height: 67px;
+            margin-left: 8px;
+            margin-top: -17px;
+            display: inline-block;
+            vertical-align: middle;
+            background: url(../images/order-bee.png) 50% 50% no-repeat;
+        }
+    }
+
     &__button {
         position: absolute;
         right: 0;
