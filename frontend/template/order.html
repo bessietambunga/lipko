@@ -1,0 +1,72 @@
+@@include('./components/_meta.html', {
+    "title": "Index",
+    "bodyclass": ""
+})
+
+@@include('./components/_svgstore.html')
+@@include('./popup/_popup.html')
+
+<div class="wrapper" id="wrapper-main">
+    
+    @@include('./components/_header.html', {
+        "current": "contact"
+    })
+
+    <div class="container">
+        <div class="layout">
+            <div class="content is-text">
+                <div class="page-container">
+                    
+                    <form action="" method="POST" class="form form-order">
+                        
+                        <div class="form-order__title">Оформление заказа:</div>
+
+                        <div class="f-label">
+                            <input name="name" placeholder="Имя:" data-error="Необходимо заполнить поле «Имя»" class="f-input">
+
+                            <div class="form-errors">
+                                Ошибка в этом поле
+                            </div>
+                        </div>
+
+                        <div class="f-label">
+                            <input name="email" placeholder="E-mail:" data-error="Необходимо заполнить поле «E-mail»" class="f-input">
+                            
+                            <div class="form-errors">
+                                Ошибка в этом поле
+                            </div>
+                        </div>
+
+                        <div class="f-label">
+                            <input name="phone" placeholder="Телефон:" data-error="Необходимо заполнить поле «Телефон»" class="f-input">
+                        </div>
+
+                        <div class="f-label">
+                            <textarea name="message" placeholder="Сообщение:" data-error="Необходимо заполнить поле «Сообщение»" class="f-textarea"></textarea>
+                        </div>
+
+                        <div class="form-errors">
+                            Ошибка в каком то поле
+                        </div>
+                        
+                        <div class="f-row clearfix">
+                            <div class="f-row__col _x50">
+                                <div class="recaptcha clearfix">
+                                    <!-- Замени картинку на рекапчу -->
+                                    <img src="../images/recaptcha.png" width="292" height="71" alt="">
+                                </div>
+                            </div>
+                            
+                            <div class="f-row__col _x50 _captcha">
+                                <button type="submit" class="button form-order__button">ОТПРАВИТЬ</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('./components/_footer.html')
+@@include('./components/_scripts.html')

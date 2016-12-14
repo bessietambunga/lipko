@@ -2,7 +2,6 @@
     @extend %button;
     height: 38px;
     padding: 0 25px;
-    border-radius: 4px;
     color: #878787;
     font-size: 1.5rem;
     font-weight: 700;
@@ -11,7 +10,6 @@
     border: 2px solid #c6c6c6;
     text-transform: uppercase;
     text-shadow: 0 0.1rem 0 #fff;
-    box-shadow: inset 0 0 0.5rem rgba(255, 255, 190, 0.75);
     transition: background-color $a-time, text-shadow $a-time, border-color $a-time, color $a-time;
 
     &:hover {

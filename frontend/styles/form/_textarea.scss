@@ -1,11 +1,7 @@
 .f-textarea {
-    height: 80px;
-    max-height: 170px;
-    padding: 7px 10px;
+    height: 130px;
     max-width: 100%;
+    max-height: 170px;
+    padding: 7px 12px;
     resize: vertical;
-
-    &_simple {
-        height: 87px;
-    }
 }
