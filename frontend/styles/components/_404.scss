@@ -3,59 +3,59 @@
     height: 100%;
     min-height: 100%;
     overflow: hidden;
-    background: url(../images/bear-404.png) 50% 100% no-repeat;
-    background-size: auto 80%;
+    background: url(../images/error-bg.jpg) 50% 100% no-repeat;
+    background-size: auto 100%;
     position: relative;
     z-index: 100;
 
-    &__logo {
-        width: 305px;
-        height: 299px;
-        height: calc(299px - 18vh);
-        background: url(../images/logo-404.png) 0 0 no-repeat;
-        background-size: auto 100%;
-    }
-
-    &__flower {
-        width: 163px;
-        height: 49px;
+    &:before {
+        height: 100%;
+        content: "";
+        display: block;
         position: absolute;
+        left: 0;
         right: 0;
         top: 0;
-        height: calc(49px - 2vh);
-        background: url(../images/error-flower.png) 0 0 no-repeat;
-        background-size: auto 100%;
-    }
-
-    &__bee {
-        width: 44px;
-        height: 41px;
-        height: calc(41px - 2vh);
-        background: url(../images/error-bee.png) 0 0 no-repeat;
-        background-size: auto 100%;
-    }
-
-    &__404 {
-        width: 421px;
-        height: 535px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        margin-top: -260px;
-        margin-left: 120px;
-        height: calc(535px - 28vh);
-        background: url(../images/error-text.png) 50% 50% no-repeat;
-        background-size: auto 100%;
-    }
-
-    &__not-found {
-        width: 422px;
-        height: 204px;
-        height: calc(204px - 18vh);
-        position: absolute;
-        right: 0;
-        bottom: 140px;
-        background: url(../images/error-page-not-found.png) 100% 0 no-repeat;
-        background-size: auto 100%;
+        background: url(../images/error-bg-top.png) 50% 0 no-repeat;
+        background-size: auto auto;
+        max-width: 100%;
     }
 }
+
+@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1140px) {
+    .error-404 {
+        &:before {
+            background-size: 100% auto;
+        }
+    }
+}
+@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 960px) {
+    .error-404 {
+        background-size: 100% auto;
+        background-position: 50% 100%;
+
+        &:before {
+            background-size: 100% auto;
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .error-404 {
+
+        &:before {
+            background-position: 0 0;
+            background-size: 140% auto;
+        }
+    }
+}
+@media only screen and (max-width: 568px) {}
+@media only screen and (max-width: 480px) {
+    .error-404 {
+        background-position: 100% 100%;
+        background-size: 110% auto;
+    }
+}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}
