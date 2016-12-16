@@ -113,8 +113,8 @@
 }
 
 .nav-list-item-link._current {
-    color: #000000;
-    background-color: #ffffff;
+    color: $c-white;
+    background-color: #ff0000;
 }
 
 @media only screen and (max-width: 868px) {
