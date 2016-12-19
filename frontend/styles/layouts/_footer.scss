@@ -164,11 +164,75 @@
     color: #9d732a;
 }
 
-@media only screen and (max-width: 1280px) {}
-@media only screen and (max-width: 1140px) {}
-@media only screen and (max-width: 1024px) {}
-@media only screen and (max-width: 960px) {}
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 960px) {
+    .footer {
+        margin: 0;
+        height: auto;
+    }
+
+    .footer .layout {
+        width: 100%;
+        padding: 0 20px;
+        background: none;
+    }
+    
+    .footer-background {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footer-outside {
+        display: none;
+    }
+
+    .footer-contacts {
+        text-align: left;    
+    }
+    
+    .footer-copyright {
+        width: auto;
+        display: inline-block;
+    }
+
+    .footer-studio,
+    .footer-copyright,
+    .footer-contacts,
+    .footer-law-info {
+        position: relative;
+        left: auto;
+        top: auto;
+        right: auto;
+        bottom: auto;
+    }
+
+    .footer-copyright,
+    .footer-contacts,
+    .footer-law-info {
+        margin-bottom: 20px;
+    }
+
+    .footer-law-info {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer .layout {
+        text-align: center;
+    }
+
+    .footer-studio {
+        display: inline-block;
+    }
+    
+    .footer-studio,
+    .footer-copyright,
+    .footer-contacts,
+    .footer-law-info {
+        text-align: center;
+    }
+}
 @media only screen and (max-width: 568px) {}
 @media only screen and (max-width: 480px) {}
 @media only screen and (max-width: 375px) {}

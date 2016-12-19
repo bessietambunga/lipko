@@ -1,7 +1,19 @@
 .container {
     width: 100%;
-    min-width: 960px;
     overflow: hidden;
     background: #fff;
+    max-width: 960px;
     padding: 55px 0 199px;
+}
+
+@media only screen and (max-width: 960px) {
+    .container {
+        padding-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding-top: 35px;
+    }
 }

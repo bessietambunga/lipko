@@ -60,12 +60,21 @@
     text-decoration: underline;
 }
 
-@media only screen and (max-width: 1280px) {}
-@media only screen and (max-width: 1140px) {}
-@media only screen and (max-width: 1024px) {}
-@media only screen and (max-width: 960px) {}
+@media only screen and (max-width: 960px) {
+    .header .header-cart {
+        top: 18px;
+        right: 75px;
+    }
+}
 @media only screen and (max-width: 768px) {}
 @media only screen and (max-width: 568px) {}
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+    .header-logo {
+        width: 140px;
+        left: 20px;
+        top: 25px;
+        background-size: 100% auto;
+    }
+}
 @media only screen and (max-width: 375px) {}
 @media only screen and (max-width: 320px) {}
