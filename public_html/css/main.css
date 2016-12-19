@@ -358,6 +358,12 @@ a.button {
     right: 0;
     bottom: 0; }
 
+@media only screen and (max-width: 375px) {
+  .form-order__complete {
+    max-width: 100%; }
+    .form-order__complete__middle {
+      font-size: 1.8rem; } }
+
 .form-errors {
   color: #f00;
   clear: both;
@@ -801,7 +807,8 @@ input:placeholder, input[placeholder], textarea:placeholder, textarea[placeholde
   margin-bottom: 15px; }
 
 @media only screen and (max-width: 960px) {
-  .content {
+  .content,
+  .content.is-text {
     margin-left: 0;
     padding: 0 20px; } }
 

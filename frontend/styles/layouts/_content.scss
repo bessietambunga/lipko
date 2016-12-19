@@ -88,7 +88,8 @@
 }
 
 @media only screen and (max-width: 960px) {
-    .content {
+    .content,
+    .content.is-text {
         margin-left: 0;
         padding: 0 20px;
     }
