@@ -53,3 +53,41 @@
         }
     }
 }
+
+@media only screen and (max-width: 568px) {
+    .main-center {
+        top: 0;
+    }
+
+    .main-logo {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .main-logo__image {
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto 20px;
+        background-size: 100% auto;
+
+        &:before {
+            content: "";
+            width: 100%;
+            display: block;
+            padding-top: 25.5670103093%;
+        }
+    }
+
+    .main-logo__slogon {
+        font-size: 2rem;
+    }
+
+    .main-logo__slogon:before, .main-logo__slogon:after {
+        top: 50%;
+        margin-top: -4px;
+    }
+}
+
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}

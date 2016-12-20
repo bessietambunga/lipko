@@ -2,6 +2,8 @@
     clear: both;
     text-align: center;
     font-size: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-bottom: 30px;
 }
 
@@ -126,5 +128,18 @@
 @media only screen and (max-width: 568px) {
     .pagination__item.arrow {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .pagination ul li {
+        margin: 0 4px;
+    }
+    
+    .pagination ul li a {
+        width: 32px;
+        height: 32px;
+        line-height: 28px;
+        border-width: 2px;
     }
 }

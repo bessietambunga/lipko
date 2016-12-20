@@ -57,6 +57,36 @@
     }
 }
 
+@media only screen and (max-width: 568px) {
+    .form-order {
+        .f-row__col._x50 {
+            width: 100%;
+            float: none;
+            height: auto;
+            clear: both;
+            text-align: center;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+        .f-row__col._captcha {
+            min-height: 0;
+        }
+
+        &__button {
+            position: relative;
+            left: auto;
+            right: auto;
+        }
+    }
+    
+    .form-errors {
+        text-align: center;
+    }
+}
+
 @media only screen and (max-width: 375px) {
     .form-order__complete {
         max-width: 100%;

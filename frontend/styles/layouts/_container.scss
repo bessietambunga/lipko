@@ -8,12 +8,13 @@
 
 @media only screen and (max-width: 960px) {
     .container {
-        padding-bottom: 0;
+        padding-bottom: 55px;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .container {
         padding-top: 35px;
+        padding-bottom: 35px;
     }
 }

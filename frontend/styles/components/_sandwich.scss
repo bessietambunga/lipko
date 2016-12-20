@@ -59,6 +59,15 @@
             transform: translateY(10px);
         }
     }
+    
+    &._main &__layer {
+        background-color: #ffb100;
+
+        &:before,
+        &:after {
+            background-color: #ffb100;
+        }
+    }
 
     &:hover &__layer {
         &:before {
@@ -72,11 +81,7 @@
 }
 
 .page-visible {
-    .header {
-        visibility: visible;
-    }
-
-    .navigation {
+    .nav {
         visibility: visible;
     }
 }
@@ -87,7 +92,7 @@
     overflow: hidden;
     -webkit-overflow-scrolling: touch;
 
-    .layout-wrapper {
+    .wrapper {
         overflow: hidden;
     }
 
@@ -96,15 +101,13 @@
         opacity: .9;
     }
     
-    .navigation {
-        &__list {
-            transform: scale(1, 1);
-        }
+    .nav-list {
+        transform: scale(1, 1);
     }
 
-    .sandwich {
+    .sandwich, .sandwich._main {
         &__layer {
-            background-color: transparent;
+            background-color: transparent !important;
     
             &:before, &:after {
                 background-color: $c-sandwich-background-active !important;

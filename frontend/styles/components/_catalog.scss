@@ -517,6 +517,11 @@ a.list-item-link {
         padding-right: 20px;
     }
 
+    .list-item .list-item-description {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .list-item-aside {
         width: 200px;
         margin-right: -200px;
@@ -543,6 +548,11 @@ a.list-item-link {
 }
 
 @media only screen and (max-width: 768px) {
+    .list-item {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
     .list-item-aside {
         width: 100%;
         margin-right: 0;
@@ -587,10 +597,30 @@ a.list-item-link {
         text-align: left;
     }
 
+    .list-item-footer .list-item-count {
+        clear: both;
+        width: 100%;
+        position: relative;
+        left: auto;
+        bottom: auto;
+        margin-bottom: 20px;
+    }
+
     .list-item-footer .list-item-price {
         clear: both;
         display: block;
+        text-align: center;
         margin-bottom: 15px;
+    }
+
+    .list-item-footer .list-item-total {
+        clear: both;
+        text-align: center;
+        position: relative;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        left: auto;
     }
 
     .list-item-footer .list-item-old-price {

@@ -89,6 +89,64 @@
 </script>
 
 <div class="wrapper is-main is-open">
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <span class="sandwich _main js-sandwich-menu">
+        <span class="sandwich__layer">Menu</span>
+    </span>
+    
+    <div class="nav-main">
+        <nav class="nav" id="navigation" role="navigation">
+    <div class="nav-wrapper">
+        <ul class="nav-list">
+            <li class="nav-list-item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                <a href="../markup/about-us.html" itemprop="url" class="nav-list-item-link is-darked">
+                    <span class="nav-list-item-link__name" itemprop="name">О НАС</span>
+                </a>
+            </li>
+            
+            <li class="nav-list-item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                <a href="../markup/catalogue.html" itemprop="url" class="nav-list-item-link is-darked">
+                    <span class="nav-list-item-link__name" itemprop="name">КАТАЛОГ</span>
+                </a>
+                
+                <div class="nav-list-submenu submenu">
+                    <ul class="submenu-list">
+                        <li class="submenu-list--item"><a href="" class="submenu-list--item--link">МЁД</a></li>
+                        <li class="submenu-list--item"><a href="" class="submenu-list--item--link">ПЫЛЬЦА</a></li>
+                        <li class="submenu-list--item"><a href="" class="submenu-list--item--link">ПЕРГА</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="nav-list-item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                <a href="../markup/gallery.html" itemprop="url" class="nav-list-item-link is-darked">
+                    <span class="nav-list-item-link__name" itemprop="name">ГАЛЕРЕЯ</span>
+                </a>
+            </li>
+
+            <li class="nav-list-item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                <a href="../markup/delivery.html" itemprop="url" class="nav-list-item-link is-darked">
+                    <span class="nav-list-item-link__name" itemprop="name">ДОСТАВКА</span>
+                </a>
+            </li>
+
+            <li class="nav-list-item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                <a href="../markup/information.html" itemprop="url" class="nav-list-item-link is-darked">
+                    <span class="nav-list-item-link__name" itemprop="name">ПОЛЕЗНАЯ ИНФОРМАЦИЯ</span>
+                </a>
+            </li>
+
+            <li class="nav-list-item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                <a href="../markup/contact.html" itemprop="url" class="nav-list-item-link is-darked">
+                    <span class="nav-list-item-link__name" itemprop="name">КОНТАКТЫ</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    </div>
+
     <div class="layout">
         
         <div class="main-center">
@@ -100,58 +158,59 @@
             </div>
 
             <nav class="nav" id="navigation" role="navigation">
-    <ul class="nav-list">
-        <li class="nav-list-item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-            <a href="../markup/about-us.html" itemprop="url" class="nav-list-item-link is-darked">
-                <span class="nav-list-item-link__name" itemprop="name">О НАС</span>
-            </a>
-        </li>
-        
-        <li class="nav-list-item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-            <a href="../markup/catalogue.html" itemprop="url" class="nav-list-item-link is-darked">
-                <span class="nav-list-item-link__name" itemprop="name">КАТАЛОГ</span>
-            </a>
+    <div class="nav-wrapper">
+        <ul class="nav-list">
+            <li class="nav-list-item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                <a href="../markup/about-us.html" itemprop="url" class="nav-list-item-link is-darked">
+                    <span class="nav-list-item-link__name" itemprop="name">О НАС</span>
+                </a>
+            </li>
             
-            <div class="nav-list-submenu submenu">
-                <ul class="submenu-list">
-                    <li class="submenu-list--item"><a href="" class="submenu-list--item--link">МЁД</a></li>
-                    <li class="submenu-list--item"><a href="" class="submenu-list--item--link">ПЫЛЬЦА</a></li>
-                    <li class="submenu-list--item"><a href="" class="submenu-list--item--link">ПЕРГА</a></li>
-                </ul>
-            </div>
-        </li>
+            <li class="nav-list-item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                <a href="../markup/catalogue.html" itemprop="url" class="nav-list-item-link is-darked">
+                    <span class="nav-list-item-link__name" itemprop="name">КАТАЛОГ</span>
+                </a>
+                
+                <div class="nav-list-submenu submenu">
+                    <ul class="submenu-list">
+                        <li class="submenu-list--item"><a href="" class="submenu-list--item--link">МЁД</a></li>
+                        <li class="submenu-list--item"><a href="" class="submenu-list--item--link">ПЫЛЬЦА</a></li>
+                        <li class="submenu-list--item"><a href="" class="submenu-list--item--link">ПЕРГА</a></li>
+                    </ul>
+                </div>
+            </li>
 
-        <li class="nav-list-item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-            <a href="../markup/gallery.html" itemprop="url" class="nav-list-item-link is-darked">
-                <span class="nav-list-item-link__name" itemprop="name">ГАЛЕРЕЯ</span>
-            </a>
-        </li>
+            <li class="nav-list-item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                <a href="../markup/gallery.html" itemprop="url" class="nav-list-item-link is-darked">
+                    <span class="nav-list-item-link__name" itemprop="name">ГАЛЕРЕЯ</span>
+                </a>
+            </li>
 
-        <li class="nav-list-item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-            <a href="../markup/delivery.html" itemprop="url" class="nav-list-item-link is-darked">
-                <span class="nav-list-item-link__name" itemprop="name">ДОСТАВКА</span>
-            </a>
-        </li>
+            <li class="nav-list-item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                <a href="../markup/delivery.html" itemprop="url" class="nav-list-item-link is-darked">
+                    <span class="nav-list-item-link__name" itemprop="name">ДОСТАВКА</span>
+                </a>
+            </li>
 
-        <li class="nav-list-item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-            <a href="../markup/information.html" itemprop="url" class="nav-list-item-link is-darked">
-                <span class="nav-list-item-link__name" itemprop="name">ПОЛЕЗНАЯ ИНФОРМАЦИЯ</span>
-            </a>
-        </li>
+            <li class="nav-list-item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                <a href="../markup/information.html" itemprop="url" class="nav-list-item-link is-darked">
+                    <span class="nav-list-item-link__name" itemprop="name">ПОЛЕЗНАЯ ИНФОРМАЦИЯ</span>
+                </a>
+            </li>
 
-        <li class="nav-list-item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-            <a href="../markup/contact.html" itemprop="url" class="nav-list-item-link is-darked">
-                <span class="nav-list-item-link__name" itemprop="name">КОНТАКТЫ</span>
-            </a>
-        </li>
-    </ul>
+            <li class="nav-list-item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                <a href="../markup/contact.html" itemprop="url" class="nav-list-item-link is-darked">
+                    <span class="nav-list-item-link__name" itemprop="name">КОНТАКТЫ</span>
+                </a>
+            </li>
+        </ul>
+    </div>
 </nav>
         </div>
 
     </div>
-</div>
 
-<footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+    <footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
 	
 	<div class="footer-outside">
 		<a href="#popup-feedback" id="bear" class="footer-bear footer-bear-reverse open-popup">
@@ -182,6 +241,8 @@
 	</div>
 	
 </footer>
+</div>
+
 <script src="../js/vendor.min.js"></script>
 <script src="../js/app.min.js"></script>
 
