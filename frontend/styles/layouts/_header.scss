@@ -61,6 +61,10 @@
 }
 
 @media only screen and (max-width: 960px) {
+    .header-navigation {
+        display: none;
+    }
+    
     .header .header-cart {
         top: 18px;
         right: 75px;

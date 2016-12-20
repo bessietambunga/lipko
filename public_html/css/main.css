@@ -748,6 +748,7 @@ input:placeholder, input[placeholder], textarea:placeholder, textarea[placeholde
   overflow: hidden;
   background: #fff;
   max-width: 960px;
+  margin: 0 auto;
   padding: 55px 0 199px; }
 
 @media only screen and (max-width: 960px) {
@@ -1094,6 +1095,8 @@ input:placeholder, input[placeholder], textarea:placeholder, textarea[placeholde
   text-decoration: underline; }
 
 @media only screen and (max-width: 960px) {
+  .header-navigation {
+    display: none; }
   .header .header-cart {
     top: 18px;
     right: 75px; } }
@@ -2875,6 +2878,16 @@ a.list-item-link {
 
 .page-visible .nav {
   visibility: visible; }
+
+.page-visible .nav-main {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10000; }
 
 .page-open {
   width: 100%;
