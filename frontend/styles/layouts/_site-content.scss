@@ -119,6 +119,16 @@
             }
         }
     }
+    
+    .table-container {
+        width: 100%;
+        overflow: auto;
+        margin: 0 auto 30px;
+
+        table {
+            margin-bottom: 0;
+        }
+    }
 
     table {
         clear: both;

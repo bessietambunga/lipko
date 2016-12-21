@@ -23,6 +23,7 @@
 }
 
 @media only screen and (max-width: 1280px) {}
+
 @media only screen and (max-width: 1140px) {
     .error-404 {
         &:before {
@@ -30,7 +31,18 @@
         }
     }
 }
-@media only screen and (max-width: 1024px) {}
+
+@media only screen and (min-width: 960px) and (min-height: 960px) {
+    .error-404 {
+        background-size: 100% auto;
+        background-position: 50% 100%;
+
+        &:before {
+            background-size: 100% auto;
+        }
+    }
+}
+
 @media only screen and (max-width: 960px) {
     .error-404 {
         background-size: 100% auto;
@@ -41,6 +53,7 @@
         }
     }
 }
+
 @media only screen and (max-width: 768px) {
     .error-404 {
 
@@ -50,6 +63,7 @@
         }
     }
 }
+
 @media only screen and (max-width: 568px) {}
 @media only screen and (max-width: 480px) {
     .error-404 {

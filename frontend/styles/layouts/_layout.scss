@@ -51,18 +51,28 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .wrapper.is-main.is-open {
+        min-height: 100%;
+    }
+
+    .wrapper.is-main.is-open + .footer {
+        transform: translate3d(0,-100%,0);
+    }
+}
+
 @media only screen and (max-width: 568px) {
     .wrapper.is-main {
         background-size: cover;
-        background-position: 20% 50%;
+        background-position: 100% 50%;
     }
 
-    .wrapper.is-main.is-open {
-        &, .layout {
-            height: auto;
-            min-height: 480px;
-        }
-    }
+    // .wrapper.is-main.is-open {
+    //     &, .layout {
+    //         height: auto;
+    //         min-height: 480px;
+    //     }
+    // }
 }
 
 @media only screen and (max-width: 480px) {}
