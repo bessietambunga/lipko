@@ -1,3 +1,33 @@
+@font-face{
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  src: local("Helvetica Neue Light Italic"),local(HelveticaNeue-LightItalic),local("Helvetica Light Oblique"),local(Helvetica-LightOblique); }
+@font-face{
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  src: local("Helvetica Neue Italic"),local(HelveticaNeue-Italic),local("Helvetica Oblique"),local(Helvetica-Oblique); }
+@font-face{
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  src: local("Helvetica Neue Bold Italic"),local(HelveticaNeue-BoldItalic),local("Helvetica Bold Oblique"),local(Helvetica-BoldOblique); }
+@font-face{
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  src: local("Helvetica Neue Light"),local(HelveticaNeue-Light),local("Helvetica Light"),local(Helvetica-Light); }
+@font-face{
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: local(HelveticaNeue),local(Helvetica); }
+@font-face{
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: local("Helvetica Neue Bold"),local(HelveticaNeue-Bold),local("Helvetica Bold"),local(Helvetica-Bold); }
 @charset "UTF-8";
 @font-face {
   font-family: 'Europe_Ext';
@@ -1044,6 +1074,17 @@ input:placeholder, input[placeholder], textarea:placeholder, textarea[placeholde
   .footer .layout {
     padding: 0 10px; } }
 
+@media only screen and (max-height: 480px) {
+  .footer-law-info {
+    display: none; }
+  .footer-background {
+    padding-top: 10px;
+    padding-bottom: 20px; }
+  .footer-copyright,
+  .footer-contacts,
+  .footer-law-info {
+    margin-bottom: 10px; } }
+
 .header {
   width: 100%;
   position: relative;
@@ -1505,6 +1546,11 @@ ol:not([class]) {
     background-position: 100% 100%;
     -webkit-background-size: 110% auto;
             background-size: 110% auto; } }
+
+@media only screen and (max-height: 580px) {
+  .error-404 {
+    -webkit-background-size: auto 100%;
+            background-size: auto 100%; } }
 
 .breadcrumbs {
   height: 56px;
