@@ -1495,8 +1495,8 @@ ol:not([class]) {
   min-height: 100%;
   overflow: hidden;
   background: url(../images/error-bg.jpg) 50% 100% no-repeat;
-  -webkit-background-size: auto 100%;
-          background-size: auto 100%;
+  -webkit-background-size: contain;
+          background-size: contain;
   position: relative;
   z-index: 100; }
   .error-404:before {
@@ -1519,8 +1519,6 @@ ol:not([class]) {
 
 @media only screen and (min-width: 960px) and (min-height: 960px) {
   .error-404 {
-    -webkit-background-size: 100% auto;
-            background-size: 100% auto;
     background-position: 50% 100%; }
     .error-404:before {
       -webkit-background-size: 100% auto;
@@ -1528,8 +1526,6 @@ ol:not([class]) {
 
 @media only screen and (max-width: 960px) {
   .error-404 {
-    -webkit-background-size: 100% auto;
-            background-size: 100% auto;
     background-position: 50% 100%; }
     .error-404:before {
       -webkit-background-size: 100% auto;
@@ -1543,14 +1539,7 @@ ol:not([class]) {
 
 @media only screen and (max-width: 480px) {
   .error-404 {
-    background-position: 100% 100%;
-    -webkit-background-size: 110% auto;
-            background-size: 110% auto; } }
-
-@media only screen and (max-height: 580px) {
-  .error-404 {
-    -webkit-background-size: auto 100%;
-            background-size: auto 100%; } }
+    background-position: 100% 100%; } }
 
 .breadcrumbs {
   height: 56px;
@@ -2570,9 +2559,6 @@ a.list-item-link {
       height: auto;
       margin: 0 auto;
       padding: 15px 20px;
-      -webkit-transform: scale(0, 0);
-          -ms-transform: scale(0, 0);
-              transform: scale(0, 0);
       -webkit-transition: -webkit-transform 0.3s;
       transition: -webkit-transform 0.3s;
       transition: transform 0.3s;
