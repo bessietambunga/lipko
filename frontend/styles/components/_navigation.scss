@@ -193,26 +193,8 @@
             height: auto;
             margin: 0 auto;
             padding: 15px 20px;
+            transform: scale(0.7);
             transition: transform $a-time;
-        }
-        
-        .nav-list-item {
-            border: 0;
-            clear: both;
-            display: block;
-            position: relative;
-            text-align: center;
-            margin: 40px 0;
-            background: none !important;
-
-            &:before, &:after {
-                display: none;
-            }
-
-            &:not(:last-child) {
-                margin-right: 0;
-                padding-right: 0;
-            }
         }
 
         .nav-list-item-link {
@@ -237,6 +219,65 @@
             &:after, &:before {
                 display: none;
                 opacity: 0 !important;
+            }
+        }
+        
+        .nav-list-item {
+            border: 0;
+            clear: both;
+            display: block;
+            position: relative;
+            text-align: center;
+            margin: 40px 0;
+            background: none !important;
+
+            &:before, &:after {
+                display: none;
+            }
+
+            &:not(:last-child) {
+                margin-right: 0;
+                padding-right: 0;
+            }
+
+            &._dropdown {
+
+                .nav-list-item-link {
+                    position: relative;
+
+                    &:before, &:after {
+                        width: 14px;
+                        height: 2px;
+                        content: "";
+                        position: absolute;
+                        right: 10px;
+                        top: 50%;
+                        opacity: 1 !important;
+                        display: block !important;
+                        background-color: #fff;
+                    }
+
+                    &:before {
+                        margin-top: -3px;
+                        transform: rotate(30deg);
+                    }
+
+                    &:after {
+                        margin-top: 3px;
+                        transform: rotate(-30deg);
+                    }
+                }
+
+                .nav-list-submenu {
+                    display: none;
+                }
+
+                &.opened {
+                    
+                    .nav-list-submenu {
+                        display: block;
+                    }
+                }
             }
         }
     }

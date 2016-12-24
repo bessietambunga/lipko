@@ -530,6 +530,13 @@ a.list-item-link {
     .list-item-content {
         padding-left: 220px;
     }
+
+    .list-item-images li {
+        clear: both;
+        display: block;
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -651,6 +658,13 @@ a.list-item-link {
     .list-item-line .button.add-cart-trigger {
         width: 100%;
         clear: both;
+    }
+    
+    .list-item-count {
+        max-width: 160px;
+        float: none;
+        display: inline-block;
+        margin: 0 auto 20px !important;
     }
 }
 

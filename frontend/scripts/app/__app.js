@@ -240,6 +240,19 @@ if (!Array.prototype.indexOf) {
                 }
             });
         
+            $('body').on('click', '.nav-list-item-link', function(e){
+                var $close = $(this).closest('.nav-list-item');
+
+                if ($close.find('.submenu').length && !$close.hasClass('opened'))
+                {
+                    e.preventDefault();
+
+                    $close.addClass('opened');
+
+                    return false;    
+                }
+            });
+
             $('body').on('mouseenter', '.nav-list-item', function(e){
                 if ($(this).find('.submenu').length)
                 {

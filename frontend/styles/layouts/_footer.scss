@@ -166,8 +166,14 @@
 
 @media only screen and (max-width: 960px) {
     .footer {
-        margin: 0;
-        height: auto;
+        height: 177px;
+        overflow: hidden;
+        margin-top: -177px;
+        text-align: center;
+    }
+
+    .footer-law-info {
+        display: none;
     }
 
     .footer .layout {
@@ -187,12 +193,22 @@
     }
 
     .footer-contacts {
-        text-align: left;    
+        text-align: center;    
     }
     
     .footer-copyright {
-        width: auto;
+        width: 100%;
+        display: block;
+        background: none;
+    }
+
+    .footer-copyright_in {
+        max-width: 180px;
+        width: 100%;
+        padding: 5px 0;
         display: inline-block;
+        background-color: #000;
+        border-radius: 4px;
     }
 
     .footer-studio,
@@ -206,10 +222,14 @@
         bottom: auto;
     }
 
+    .footer-studio {
+        display: inline-block;
+    }
+
     .footer-copyright,
     .footer-contacts,
     .footer-law-info {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .footer-law-info {
@@ -222,14 +242,9 @@
         text-align: center;
     }
 
-    .footer-studio {
-        display: inline-block;
-    }
-
     .footer-copyright {
         display: block;
-        margin: 0 auto 20px;
-        max-width: 180px;
+        margin: 0 auto 10px;
     }
 
     .footer-studio,

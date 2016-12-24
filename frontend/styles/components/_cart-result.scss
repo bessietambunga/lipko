@@ -45,3 +45,39 @@
         }
     }
 }
+
+@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1140px) {}
+@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 960px) {}
+@media only screen and (max-width: 768px) {
+    .cart-result {
+        text-align: center;
+
+        &__total {
+            line-height: 1;
+        }
+
+        &__total,
+        &__button {
+            clear: both;
+            margin-left: 0;
+            margin-right: 0;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 568px) {
+    .cart-result {
+        &__total {
+            display: block;
+            text-align: center;
+        }
+    }
+}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}
