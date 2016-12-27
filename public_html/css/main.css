@@ -1199,13 +1199,6 @@ input:placeholder, input[placeholder], textarea:placeholder, textarea[placeholde
   .layout-960 {
     max-width: 100%; } }
 
-@media only screen and (max-width: 768px) {
-  .wrapper.is-main.is-open {
-    min-height: 100%; }
-  .wrapper.is-main.is-open + .footer {
-    -webkit-transform: translate3d(0, -100%, 0);
-            transform: translate3d(0, -100%, 0); } }
-
 @media only screen and (max-width: 568px) {
   .wrapper.is-main {
     -webkit-background-size: cover;

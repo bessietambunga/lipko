@@ -46,13 +46,13 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .wrapper.is-main.is-open {
-        min-height: 100%;
-    }
+    // .wrapper.is-main.is-open {
+    //     min-height: 100%;
+    // }
 
-    .wrapper.is-main.is-open + .footer {
-        transform: translate3d(0,-100%,0);
-    }
+    // .wrapper.is-main.is-open + .footer {
+    //     transform: translate3d(0,-100%,0);
+    // }
 }
 
 @media only screen and (max-width: 568px) {
