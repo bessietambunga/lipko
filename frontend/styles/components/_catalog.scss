@@ -18,6 +18,10 @@
 
 .catalog-item-image {
     text-align: center;
+    
+    img {
+        max-width: 100%;
+    }
 }
 
 .catalog-item-content {

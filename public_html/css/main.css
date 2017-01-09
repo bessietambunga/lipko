@@ -105,10 +105,11 @@ body {
   color: #121212;
   min-width: 320px;
   font-size: 16px;
-  font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.5;
-  font-kerning: none;
+  -webkit-font-kerning: none;
+     -moz-font-kerning: none;
+          font-kerning: none;
   background-color: #fff; }
   body.ov-hidden {
     overflow: hidden; }
@@ -125,7 +126,9 @@ body, input, textarea, select, button {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smoothing: antialiased;
-  font-feature-settings: "liga", "kern";
+  -webkit-font-feature-settings: "liga", "kern";
+     -moz-font-feature-settings: "liga", "kern";
+          font-feature-settings: "liga", "kern";
   direction: ltr;
   text-align: left; }
 
@@ -295,7 +298,6 @@ template {
   line-height: 35px;
   color: #878787;
   font-size: 15px;
-  font-size: 15px;
   font-size: 1.5rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -351,10 +353,8 @@ a.button {
   .form-order__title {
     color: #000;
     font-size: 18px;
-    font-size: 18px;
     font-size: 1.8rem;
     font-weight: 400;
-    line-height: 19px;
     line-height: 19px;
     line-height: 1.9rem;
     margin-bottom: 55px; }
@@ -368,7 +368,6 @@ a.button {
     background-color: #ffc20e; }
     .form-order__complete__middle {
       color: #000;
-      font-size: 24px;
       font-size: 24px;
       font-size: 2.4rem;
       font-weight: 400;
@@ -415,7 +414,6 @@ a.button {
 .form-errors {
   color: #f00;
   clear: both;
-  font-size: 14px;
   font-size: 14px;
   font-size: 1.4rem;
   margin-bottom: 10px; }
@@ -464,7 +462,6 @@ textarea {
   width: 100%;
   color: #000;
   font-size: 14px;
-  font-size: 14px;
   font-size: 1.4rem;
   font-weight: 400;
   border-radius: 1px;
@@ -480,8 +477,8 @@ textarea {
     border-color: rgba(255, 0, 0, 0.5); }
   .f-input:disabled,
   .f-textarea:disabled {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
     opacity: 0.4;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
     cursor: default; }
   .f-input:focus, .f-input:focus,
   .f-textarea:focus,
@@ -511,7 +508,6 @@ textarea {
     color: #000;
     display: block;
     font-size: 13px;
-    font-size: 13px;
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 38px;
@@ -538,7 +534,6 @@ textarea {
     color: #ff0000;
     display: block;
     font-size: 14px;
-    font-size: 14px;
     font-size: 1.4rem;
     line-height: 1;
     font-weight: 400;
@@ -559,15 +554,15 @@ textarea {
 
 input:placeholder, textarea:placeholder {
   color: #000;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease; }
 
 input:focus:placeholder, textarea:focus:placeholder {
   color: transparent;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  opacity: 0; }
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
 
 input:placeholder, input[placeholder], textarea:placeholder, textarea[placeholder] {
   text-overflow: ellipsis; }
@@ -586,14 +581,12 @@ input:placeholder, input[placeholder], textarea:placeholder, textarea[placeholde
     margin-bottom: 15px; }
   .f-row__title {
     font-size: 17px;
-    font-size: 17px;
     font-size: 1.7rem;
     line-height: 1;
     font-weight: 500; }
   .f-row__toggle {
     color: #00f;
     cursor: pointer;
-    font-size: 15px;
     font-size: 15px;
     font-size: 1.5rem;
     line-height: 1;
@@ -753,7 +746,6 @@ input:placeholder, input[placeholder], textarea:placeholder, textarea[placeholde
 
 .f-star {
   color: #f00;
-  font-size: 14px;
   font-size: 14px;
   font-size: 1.4rem;
   font-weight: 400;
@@ -1099,6 +1091,7 @@ input:placeholder, input[placeholder], textarea:placeholder, textarea[placeholde
   width: 100%;
   position: relative;
   height: 101px;
+  z-index: 100;
   background-color: #ffc20e; }
 
 .header .layout {
@@ -1120,7 +1113,6 @@ input:placeholder, input[placeholder], textarea:placeholder, textarea[placeholde
   top: 29px;
   color: #000;
   text-align: center;
-  font-size: 21px;
   font-size: 21px;
   font-size: 2.1rem;
   font-weight: 400;
@@ -1320,7 +1312,6 @@ input:placeholder, input[placeholder], textarea:placeholder, textarea[placeholde
   color: #000;
   font-family: 'Europe_Ext', 'Roboto Condensed', sans-serif;
   font-size: 28px;
-  font-size: 28px;
   font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 20px; }
@@ -1328,7 +1319,6 @@ input:placeholder, input[placeholder], textarea:placeholder, textarea[placeholde
 .site-content h3 {
   color: #000;
   font-family: 'Europe_Ext', 'Roboto Condensed', sans-serif;
-  font-size: 20px;
   font-size: 20px;
   font-size: 2rem;
   font-weight: 700;
@@ -1354,7 +1344,6 @@ input:placeholder, input[placeholder], textarea:placeholder, textarea[placeholde
 .site-content p {
   color: #000;
   font-size: 13px;
-  font-size: 13px;
   font-size: 1.3rem;
   font-weight: 400;
   line-height: 1.4615384615; }
@@ -1367,7 +1356,6 @@ input:placeholder, input[placeholder], textarea:placeholder, textarea[placeholde
   list-style-type: none; }
   .site-content ul:not([class]) li {
     color: #000;
-    font-size: 13px;
     font-size: 13px;
     font-size: 1.3rem;
     font-weight: 400;
@@ -1394,7 +1382,6 @@ input:placeholder, input[placeholder], textarea:placeholder, textarea[placeholde
   .site-content ol:not([class]) li {
     color: #000;
     font-size: 13px;
-    font-size: 13px;
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 1.4615384615;
@@ -1402,7 +1389,6 @@ input:placeholder, input[placeholder], textarea:placeholder, textarea[placeholde
     position: relative; }
     .site-content ol:not([class]) li:before {
       color: #000;
-      font-size: 13px;
       font-size: 13px;
       font-size: 1.3rem;
       font-weight: 700;
@@ -1437,7 +1423,6 @@ input:placeholder, input[placeholder], textarea:placeholder, textarea[placeholde
   .site-content table thead td, .site-content table thead th {
     color: #000;
     font-size: 14px;
-    font-size: 14px;
     font-size: 1.4rem;
     font-weight: 700;
     text-align: center;
@@ -1453,17 +1438,14 @@ input:placeholder, input[placeholder], textarea:placeholder, textarea[placeholde
   .site-content table thead td {
     background-color: #ffc20e;
     border: 2px solid #b7b7b7;
-    border: 2px solid #b7b7b7;
     border: 0.2rem solid #b7b7b7; }
   .site-content table tbody th {
     color: #000;
-    font-size: 14px;
     font-size: 14px;
     font-size: 1.4rem;
     font-weight: 700;
     padding: 15px 10px;
     background-color: #ffc20e;
-    border: 2px solid #fff;
     border: 2px solid #fff;
     border: 0.2rem solid #fff; }
     .site-content table tbody th:first-child {
@@ -1568,14 +1550,12 @@ ol:not([class]) {
   padding: 0 25px;
   color: #878787;
   font-size: 15px;
-  font-size: 15px;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 34px;
   background-color: #fff;
   border: 2px solid #c6c6c6;
   text-transform: uppercase;
-  text-shadow: 0 1px 0 #fff;
   text-shadow: 0 1px 0 #fff;
   text-shadow: 0 0.1rem 0 #fff;
   -webkit-transition: background-color 0.3s, text-shadow 0.3s, border-color 0.3s, color 0.3s;
@@ -1596,7 +1576,6 @@ ol:not([class]) {
     height: 53px;
     margin: 0 11px;
     min-width: 250px;
-    font-size: 18px;
     font-size: 18px;
     font-size: 1.8rem;
     font-weight: 700;
@@ -1619,7 +1598,6 @@ ol:not([class]) {
     .cart-result__total strong {
       color: #000;
       font-family: 'Europe_Ext', 'Roboto Condensed', sans-serif;
-      font-size: 28px;
       font-size: 28px;
       font-size: 2.8rem;
       font-weight: 700;
@@ -1664,6 +1642,8 @@ ol:not([class]) {
 
 .catalog-item-image {
   text-align: center; }
+  .catalog-item-image img {
+    max-width: 100%; }
 
 .catalog-item-content {
   margin-left: 590px; }
@@ -1745,7 +1725,6 @@ ol:not([class]) {
   display: inline-block;
   font-family: Archive, Arial, Helvetica, sans-serif;
   font-size: 24px;
-  font-size: 24px;
   font-size: 2.4rem;
   font-weight: 400;
   text-transform: uppercase; }
@@ -1768,12 +1747,8 @@ ol:not([class]) {
   bottom: 0;
   display: inline-block;
   background: url(../images/ico/remove.png) 50% 50% no-repeat;
-  background: url(../images/ico/remove.png) 50% 50% no-repeat;
-  background: url(../images/ico/remove.png) 50% 50% no-repeat;
   background: url(../images/ico/remove.png) 50% 50% no-repeat; }
   .list-item-remove:hover {
-    background-image: url(../images/ico/remove-active.png);
-    background-image: url(../images/ico/remove-active.png);
     background-image: url(../images/ico/remove-active.png);
     background-image: url(../images/ico/remove-active.png); }
 
@@ -1797,7 +1772,6 @@ ol:not([class]) {
 .list-item-price strong {
   color: #000;
   font-family: 'Europe_Ext', 'Roboto Condensed', sans-serif;
-  font-size: 28px;
   font-size: 28px;
   font-size: 2.8rem;
   font-weight: 700;
@@ -1905,7 +1879,6 @@ ol:not([class]) {
 
 a.list-item-link {
   font-size: 23px;
-  font-size: 23px;
   font-size: 2.3rem;
   line-height: 1;
   border-bottom: 1px solid #c6c6c6;
@@ -2011,7 +1984,6 @@ a.list-item-link {
   color: #000;
   display: inline-block;
   vertical-align: middle;
-  font-size: 21px;
   font-size: 21px;
   font-size: 2.1rem;
   font-weight: 400;
@@ -2200,7 +2172,6 @@ a.list-item-link {
     float: left;
     color: #959595;
     font-size: 11px;
-    font-size: 11px;
     font-size: 1.1rem;
     font-weight: 700;
     line-height: 24px;
@@ -2215,7 +2186,6 @@ a.list-item-link {
     height: 24px;
     color: #595959;
     padding: 0 6px;
-    font-size: 15px;
     font-size: 15px;
     font-size: 1.5rem;
     line-height: 24px;
@@ -2268,7 +2238,6 @@ a.list-item-link {
     background: url(../images/main-logo.png) no-repeat 100% 0; }
   .main-logo__slogon {
     color: #231f20;
-    font-size: 28px;
     font-size: 28px;
     font-size: 2.8rem;
     line-height: 1;
@@ -2378,8 +2347,8 @@ a.list-item-link {
     position: absolute;
     left: 0;
     top: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     visibility: hidden;
     width: 100%;
     -webkit-transition: opacity .3s, visibility .3s;
@@ -2387,8 +2356,8 @@ a.list-item-link {
 
 @media only screen and (min-width: 1000px) {
   .cd-morph-dropdown .dropdown.active {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     visibility: visible; } }
 
 @media only screen and (min-width: 1000px) {
@@ -2400,16 +2369,16 @@ a.list-item-link {
     height: 1px;
     width: 1px;
     background: #FFFFFF;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     -webkit-transition: opacity .3s;
     transition: opacity .3s;
     -webkit-transform-origin: top left;
         -ms-transform-origin: top left;
             transform-origin: top left; }
   .cd-morph-dropdown.is-dropdown-visible .bg-layer {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     -webkit-transition: opacity .3s, -webkit-transform .3s;
     transition: opacity .3s, -webkit-transform .3s;
     transition: transform .3s, opacity .3s;
@@ -2480,8 +2449,8 @@ a.list-item-link {
 
 .submenu {
   display: none;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   text-align: left;
   min-width: 127px;
   padding-top: 10px;
@@ -2494,8 +2463,8 @@ a.list-item-link {
   .submenu.is-show {
     display: block; }
   .submenu.is-animate {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0); }
 
@@ -2510,7 +2479,6 @@ a.list-item-link {
 
 .submenu-list--item--link {
   color: #000;
-  font-size: 10px;
   font-size: 10px;
   font-size: 1rem;
   font-weight: 400;
@@ -2528,8 +2496,8 @@ a.list-item-link {
 @media only screen and (max-width: 960px) {
   .submenu {
     display: block;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     text-align: center;
     min-width: 100%;
     -webkit-transform: translate3d(0, 0, 0);
@@ -2607,8 +2575,8 @@ a.list-item-link {
         color: #1487d9; }
       .nav .nav-list-item-link:after, .nav .nav-list-item-link:before {
         display: none;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)" !important;
-        opacity: 0 !important; }
+        opacity: 0 !important;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
     .nav .nav-list-item {
       border: 0;
       clear: both;
@@ -2631,8 +2599,8 @@ a.list-item-link {
           position: absolute;
           right: 10px;
           top: 50%;
-          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" !important;
           opacity: 1 !important;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
           display: block !important;
           background-color: #fff; }
         .nav .nav-list-item._dropdown .nav-list-item-link:before {
@@ -2679,7 +2647,6 @@ a.list-item-link {
   text-decoration: none;
   color: #b7b7b7;
   font-size: 15px;
-  font-size: 15px;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 37px;
@@ -2706,14 +2673,14 @@ a.list-item-link {
   left: 0;
   top: 0;
   content: "";
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   -webkit-transition: opacity .2s;
   transition: opacity .2s; }
 
 .pagination ul li .pagination-icon:hover span:before {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  opacity: 1; }
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
 
 .pagination ul li .pagination-icon span,
 .pagination ul li .pagination-icon span:before {
@@ -2796,7 +2763,6 @@ a.list-item-link {
     color: #000;
     font-size: 18px;
     font-size: 18px;
-    font-size: 18px;
     font-size: 1.8rem;
     font-weight: 400;
     padding: 0;
@@ -2814,7 +2780,6 @@ a.list-item-link {
     border: 0;
     outline: none;
     font-family: sans-serif;
-    font-size: 24px;
     font-size: 24px;
     font-size: 2.4rem;
     font-style: normal;
@@ -2880,7 +2845,6 @@ a.list-item-link {
   .remover__title {
     color: #000;
     font-size: 14px;
-    font-size: 14px;
     font-size: 1.4rem;
     font-weight: 700;
     text-align: center;
@@ -2893,7 +2857,6 @@ a.list-item-link {
     height: 40px;
     margin: 0 7px;
     color: #000;
-    font-size: 18px;
     font-size: 18px;
     font-size: 1.8rem;
     font-weight: 700;
@@ -2914,8 +2877,8 @@ a.list-item-link {
   top: 0;
   z-index: 8888;
   visibility: hidden;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   background-color: #000;
   -webkit-transform: scale(0.5, 0.5);
       -ms-transform: scale(0.5, 0.5);
@@ -2934,8 +2897,8 @@ a.list-item-link {
   margin: 0;
   z-index: -1;
   cursor: pointer;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   text-decoration: none; }
   .sandwich__layer {
     width: 100%;
@@ -3012,8 +2975,8 @@ a.list-item-link {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
-    opacity: .9; }
+    opacity: .9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)"; }
   .page-open .nav-list {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
@@ -3034,8 +2997,8 @@ a.list-item-link {
 @media only screen and (max-width: 960px) {
   .sandwich {
     z-index: 10030;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    opacity: 1; } }
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; } }
 
 .upper {
   width: 100%;
