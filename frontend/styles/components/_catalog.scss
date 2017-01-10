@@ -72,7 +72,8 @@
     margin-right: 0;
 }
 
-.list-item-line .button.add-cart-trigger {
+.list-item-line .button.add-cart-trigger,
+.list-item-line .button.insert-cart-trigger {
     float: right;
 }
 
@@ -650,7 +651,8 @@ a.list-item-link {
         margin-left: 0;
     }
 
-    .list-item-footer .button.add-cart-trigger {
+    .list-item-footer .button.add-cart-trigger,
+    .list-item-footer .button.insert-cart-trigger {
         display: block;
         position: relative;
         left: auto;
@@ -659,7 +661,8 @@ a.list-item-link {
         bottom: auto;
     }
 
-    .list-item-line .button.add-cart-trigger {
+    .list-item-line .button.add-cart-trigger,
+    .list-item-line .button.insert-cart-trigger {
         width: 100%;
         clear: both;
     }
