@@ -1015,7 +1015,7 @@ input:placeholder, input[placeholder], textarea:placeholder, textarea[placeholde
   .footer {
     height: 177px;
     overflow: hidden;
-    margin-top: -177px;
+    margin-top: -173px;
     text-align: center; }
   .footer-law-info {
     display: none; }
@@ -1682,7 +1682,8 @@ ol:not([class]) {
   float: left;
   margin-right: 0; }
 
-.list-item-line .button.add-cart-trigger {
+.list-item-line .button.add-cart-trigger,
+.list-item-line .button.insert-cart-trigger {
   float: right; }
 
 .list-item-line .list-item-price {
@@ -2086,7 +2087,45 @@ a.list-item-link {
   .list-item-image {
     margin: 0 auto; }
   .list-item-content {
-    padding-left: 0; } }
+    padding-left: 0; }
+  .list-item-footer {
+    text-align: center; }
+    .list-item-footer .list-item-price, .list-item-footer .list-item-price.is-inline {
+      text-align: center;
+      display: block;
+      margin: 0 auto 20px; }
+    .list-item-footer .list-item-old-price, .list-item-footer .list-item-old-price.is-inline {
+      display: block;
+      max-width: 110px;
+      text-align: center;
+      margin: 0 auto 20px; }
+    .list-item-footer .list-item-total {
+      position: relative;
+      top: auto;
+      left: auto;
+      right: auto;
+      bottom: auto;
+      text-align: center; }
+    .list-item-footer .list-item-count {
+      width: 150px;
+      display: block;
+      margin: 0 auto 20px;
+      display: block;
+      float: none;
+      position: relative;
+      top: auto;
+      left: auto;
+      right: auto;
+      bottom: auto; }
+    .list-item-footer .button {
+      width: 140px;
+      margin: 0 auto;
+      display: block;
+      position: relative;
+      top: auto;
+      left: auto;
+      right: auto;
+      bottom: auto; } }
 
 @media only screen and (max-width: 568px) {
   .list-item-footer {
@@ -2136,14 +2175,16 @@ a.list-item-link {
     text-align: center; }
   .list-item-line .list-item-old-price {
     margin-left: 0; }
-  .list-item-footer .button.add-cart-trigger {
+  .list-item-footer .button.add-cart-trigger,
+  .list-item-footer .button.insert-cart-trigger {
     display: block;
     position: relative;
     left: auto;
     right: auto;
     top: auto;
     bottom: auto; }
-  .list-item-line .button.add-cart-trigger {
+  .list-item-line .button.add-cart-trigger,
+  .list-item-line .button.insert-cart-trigger {
     width: 100%;
     clear: both; }
   .list-item-count {
