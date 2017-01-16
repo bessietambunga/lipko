@@ -39,6 +39,19 @@
     padding-top: 10px;
 }
 
+.button.add-cart-trigger,
+.button.insert-cart-trigger {
+    &.in-cart {
+        &, &:hover {
+            border-color: #f00;
+            line-height: 34px;
+            color: #fff !important;
+            pointer-events: none;
+            background-color: #f00 !important;
+        }
+    }
+}
+
 .list-item {
     clear: both;
     padding: 60px 0 55px;
