@@ -2066,10 +2066,10 @@ a.list-item-link {
 .list-item-count .inc {
   right: 13px; }
   .list-item-count .inc:before {
-    margin-left: -10px; }
+    margin-left: -5px; }
   .list-item-count .inc:after {
     display: block;
-    margin-left: -2px;
+    margin-left: 3px;
     margin-top: -9px; }
 
 @media only screen and (max-width: 960px) {
