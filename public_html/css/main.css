@@ -2113,25 +2113,32 @@ a.list-item-link {
     margin: 0 auto; }
   .list-item-content {
     padding-left: 0; }
-  .list-item-footer {
+  .list-item-footer,
+  .list-item-line.is-pusher {
     text-align: center; }
-    .list-item-footer .list-item-price, .list-item-footer .list-item-price.is-inline {
+    .list-item-footer .list-item-price, .list-item-footer .list-item-price.is-inline,
+    .list-item-line.is-pusher .list-item-price,
+    .list-item-line.is-pusher .list-item-price.is-inline {
       text-align: center;
       display: block;
       margin: 0 auto 20px; }
-    .list-item-footer .list-item-old-price, .list-item-footer .list-item-old-price.is-inline {
+    .list-item-footer .list-item-old-price, .list-item-footer .list-item-old-price.is-inline,
+    .list-item-line.is-pusher .list-item-old-price,
+    .list-item-line.is-pusher .list-item-old-price.is-inline {
       display: block;
       max-width: 140px;
       text-align: center;
       margin: 0 auto 20px; }
-    .list-item-footer .list-item-total {
+    .list-item-footer .list-item-total,
+    .list-item-line.is-pusher .list-item-total {
       position: relative;
       top: auto;
       left: auto;
       right: auto;
       bottom: auto;
       text-align: center; }
-    .list-item-footer .list-item-count {
+    .list-item-footer .list-item-count,
+    .list-item-line.is-pusher .list-item-count {
       width: 160px;
       display: block;
       margin: 0 auto 20px;
@@ -2142,7 +2149,8 @@ a.list-item-link {
       left: auto;
       right: auto;
       bottom: auto; }
-    .list-item-footer .button {
+    .list-item-footer .button,
+    .list-item-line.is-pusher .button {
       width: 160px;
       margin: 0 auto;
       display: block;
