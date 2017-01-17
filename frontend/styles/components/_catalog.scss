@@ -578,21 +578,6 @@ a.list-item-link {
         padding-bottom: 30px;
     }
 
-    .list-item-aside {
-        width: 100%;
-        margin-right: 0;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .list-item-image {
-        margin: 0 auto;
-    }
-    
-    .list-item-content {
-        padding-left: 0;
-    }
-
     .list-item-footer,
     .list-item-line.is-pusher {
         text-align: center;
@@ -650,6 +635,21 @@ a.list-item-link {
 }
 
 @media only screen and (max-width: 568px) {
+    .list-item-image {
+        margin: 0 auto;
+    }
+    
+    .list-item-aside {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .list-item-content {
+        padding-left: 0;
+    }
+
     .list-item-footer {
         clear: both;
         text-align: center;
