@@ -2121,7 +2121,7 @@ a.list-item-link {
       margin: 0 auto 20px; }
     .list-item-footer .list-item-old-price, .list-item-footer .list-item-old-price.is-inline {
       display: block;
-      max-width: 110px;
+      max-width: 140px;
       text-align: center;
       margin: 0 auto 20px; }
     .list-item-footer .list-item-total {
@@ -2132,7 +2132,7 @@ a.list-item-link {
       bottom: auto;
       text-align: center; }
     .list-item-footer .list-item-count {
-      width: 150px;
+      width: 160px;
       display: block;
       margin: 0 auto 20px;
       display: block;
@@ -2143,7 +2143,7 @@ a.list-item-link {
       right: auto;
       bottom: auto; }
     .list-item-footer .button {
-      width: 140px;
+      width: 160px;
       margin: 0 auto;
       display: block;
       position: relative;
