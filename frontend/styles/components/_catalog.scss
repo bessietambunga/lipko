@@ -593,7 +593,8 @@ a.list-item-link {
         padding-left: 0;
     }
 
-    .list-item-footer {
+    .list-item-footer,
+    .list-item-line.is-pusher {
         text-align: center;
 
         .list-item-price {
