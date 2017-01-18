@@ -2253,8 +2253,8 @@ a.list-item-link {
     bottom: auto; }
   .list-item-line .button.add-cart-trigger,
   .list-item-line .button.insert-cart-trigger {
-    width: 100%;
-    clear: both; }
+    clear: both;
+    margin: 0 auto; }
   .list-item-count {
     max-width: 160px;
     float: none;
