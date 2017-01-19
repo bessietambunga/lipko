@@ -263,6 +263,8 @@ if (!Array.prototype.indexOf) {
                         }, 500);
                     }
                 }
+
+                return false;
             });
 
             $('body').on('click', '.toggle-trigger', function(e){
