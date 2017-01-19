@@ -1,5 +1,42 @@
 var body = document.body, timer;
 
+// // Simple JavaScript Templating
+// // John Resig - http://ejohn.org/ - MIT Licensed
+// var tmpl = null;
+// ;(function(){
+//     var cache = {};
+
+//     this.tmpl = function tmpl(str, data){
+//         // Figure out if we're getting a template, or if we need to
+//         // load the template - and be sure to cache the result.
+//         var fn = !/\W/.test(str) ?
+//             cache[str] = cache[str] ||
+//                 tmpl(document.getElementById(str).innerHTML) :
+
+//             // Generate a reusable function that will serve as a template
+//             // generator (and which will be cached).
+//             new Function("obj",
+//                 "var p=[],print=function(){p.push.apply(p,arguments);};" +
+
+//                     // Introduce the data as local variables using with(){}
+//                     "with(obj){p.push('" +
+
+//                     // Convert the template into pure JavaScript
+//                     str
+//                         .replace(/[\r\t\n]/g, " ")
+//                         .split("<%").join("\t")
+//                         .replace(/((^|%>)[^\t]*)'/g, "$1\r")
+//                         .replace(/\t=(.*?)%>/g, "',$1,'")
+//                         .split("\t").join("');")
+//                         .split("%>").join("p.push('")
+//                         .split("\r").join("\\'")
+//                     + "');}return p.join('');");
+
+//         // Provide some basic currying to the user
+//         return data ? fn( data ) : fn;
+//     };
+// })();
+
 window.addEventListener('scroll', function() {
     clearTimeout(timer);
     if(!body.classList.contains('disable-hover'))
@@ -68,42 +105,6 @@ if (!Array.prototype.indexOf) {
     };
 }
 
-// Simple JavaScript Templating
-// John Resig - http://ejohn.org/ - MIT Licensed
-;(function(){
-    var cache = {};
-
-    this.tmpl = function tmpl(str, data){
-        // Figure out if we're getting a template, or if we need to
-        // load the template - and be sure to cache the result.
-        var fn = !/\W/.test(str) ?
-            cache[str] = cache[str] ||
-                tmpl(document.getElementById(str).innerHTML) :
-
-            // Generate a reusable function that will serve as a template
-            // generator (and which will be cached).
-            new Function("obj",
-                "var p=[],print=function(){p.push.apply(p,arguments);};" +
-
-                    // Introduce the data as local variables using with(){}
-                    "with(obj){p.push('" +
-
-                    // Convert the template into pure JavaScript
-                    str
-                        .replace(/[\r\t\n]/g, " ")
-                        .split("<%").join("\t")
-                        .replace(/((^|%>)[^\t]*)'/g, "$1\r")
-                        .replace(/\t=(.*?)%>/g, "',$1,'")
-                        .split("\t").join("');")
-                        .split("%>").join("p.push('")
-                        .split("\r").join("\\'")
-                    + "');}return p.join('');");
-
-        // Provide some basic currying to the user
-        return data ? fn( data ) : fn;
-    };
-})();
-
 (function($) {
     $.app = {
         sandwich: {
@@ -116,7 +117,7 @@ if (!Array.prototype.indexOf) {
 
             extend: function(config)
             {
-                _this = this;
+                var _this = this;
 
                 if (typeof config !== 'undefined')
                 {
@@ -180,7 +181,7 @@ if (!Array.prototype.indexOf) {
 
             sandwichTrigger: function()
             {
-                _this = this;
+                var _this = this;
 
                 if (_this.config.keyHooks)
                 {
@@ -200,7 +201,7 @@ if (!Array.prototype.indexOf) {
 
             overlayTrigger: function()
             {
-                _this = this;
+                var _this = this;
 
                 $('body').on('click', _this.config.overlay, function(e){
                     _this.hide();
@@ -224,6 +225,46 @@ if (!Array.prototype.indexOf) {
 
             $(".integer").on('keypress', function (e) { if( [0, 8].indexOf( e.which ) < 0 && ( e.which < 48 || e.which > 57 ) ) { return false; } });
             
+            $('body').on('click', '.insert-cart-trigger', function(e){
+                e.preventDefault();
+
+                var $button = $(this);
+
+                if (!$button.hasClass('in-cart')) {
+                    var $id = $(this).data('id_product');
+                    
+                    $.post("/cart/insert/", {
+                        action: 'insert',
+                        id: $id,
+                        quantity: 1
+                    }, function( data ) {
+                        $('#total_count').text(data);
+                        $button.html("В корзине").addClass("in-cart");
+                    });
+
+                    if (!$('#added_in_basket').length) {
+                        var popover = [
+                            '<div class="popover" id="added_in_basket">',
+                                '<div class="form-order__complete">',
+                                   '<div class="form-order__complete__middle">',
+                                       'Товар',
+                                       '<span class="form-order__complete__icon"></span>добавлен в корзину',
+                                   '</div>',
+                                '</div>',
+                            '</div>',
+                        ].join('');
+
+                        $('body').append(popover);
+
+                        setTimeout(function(){
+                            $('#added_in_basket').fadeOut(800, function() {
+                                $(this).remove();
+                            })
+                        }, 500);
+                    }
+                }
+            });
+
             $('body').on('click', '.toggle-trigger', function(e){
                 e.preventDefault();
 

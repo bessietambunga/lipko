@@ -41,11 +41,12 @@
 
 .button.add-cart-trigger,
 .button.insert-cart-trigger {
+    line-height: 36px;
+
     &.in-cart {
         &, &:hover {
-            border-color: #f00;
-            line-height: 34px;
             color: #fff !important;
+            border-color: #f00;
             pointer-events: none;
             background-color: #f00 !important;
         }
