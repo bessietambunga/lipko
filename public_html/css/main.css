@@ -2861,9 +2861,9 @@ a.list-item-link {
   position: fixed;
   z-index: 100000;
   left: 50%;
-  top: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0); }
+  top: 30%;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0); }
 
 .quantity {
   clear: both;
