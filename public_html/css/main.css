@@ -2862,8 +2862,9 @@ a.list-item-link {
   z-index: 100000;
   left: 50%;
   top: 30%;
-  -webkit-transform: translate3d(0, -50%, 0);
-          transform: translate3d(0, -50%, 0); }
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
 
 .quantity {
   clear: both;
