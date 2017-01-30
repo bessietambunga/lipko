@@ -1,0 +1,43 @@
+<template id="tmpl_popup-message">
+    <div class="popup popup--simple popup_message" id="popup_message">
+        <b class="popup__close popup-close popup__close--simple popup-btn-close">
+            <svg class="popup-close-ico" role="image">
+                <use xlink:href="#close"/>
+            </svg>
+        </b>
+
+        {{#if title}}
+        <header class="popup-header popup-header--simple">
+            {{title}}
+        </header>
+        {{/if}}
+
+        {{#if text}}
+        <div class="popup-content popup-content--simple clearfix">
+            {{text}}
+        </div>
+        {{/if}}
+    </div>
+</template>
+
+<template id="tmpl_popup-error">
+    <div class="popup popup--simple popup_error" id="popup_error">
+        <b class="popup__close popup-close popup__close--simple popup-btn-close">
+            <svg class="popup-close-ico" role="image">
+                <use xlink:href="#close"/>
+            </svg>
+        </b>
+        
+        {{#if title}}
+        <header class="popup-header popup-header--simple">
+            {{title}}
+        </header>
+        {{/if}}
+    
+        {{#if text}}
+        <div class="popup-content popup-content--simple clearfix">
+            {{text}}
+        </div>
+        {{/if}}
+    </div>
+</template>

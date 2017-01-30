@@ -147,7 +147,7 @@
             $popup.find('.tooltip').remove();
         },
         resetForm: function($popup) {
-            $form = $popup.is('form') ? $popup : $popup.find('form');
+            var $form = $popup.is('form') ? $popup : $popup.find('form');
             $form.each(function() {
                 this.reset();
             });
@@ -325,7 +325,7 @@
     $.popup.message = function(title, text, btn) {
         var btn = btn || null;
 
-        $popup = $(tmpl('tmpl_popup-message', {'title': title, 'text': text, 'btn': btn}));
+        var $popup = $(template('tmpl_popup-message', {'title': title, 'text': text, 'btn': btn}));
 
         $popup.addClass('temp');
 
@@ -335,7 +335,7 @@
     }
     
     $.popup.error = function(title, text) {
-        $popup = $(tmpl('tmpl_popup-error', {'title': title, 'text': text}));
+        var $popup = $(template('tmpl_popup-error', {'title': title, 'text': text}));
 
         $popup.addClass('temp');
 
